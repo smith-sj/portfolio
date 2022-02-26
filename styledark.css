@@ -1,0 +1,139 @@
+body {
+    height: 100vh;
+    width: 95vw;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    background-color: #EEEEEE;
+}
+
+
+a {
+    color: #272727;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #272727;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15vw;
+    font-weight: 900;
+    width: 80%;
+}
+
+h2 {
+    color: #272727;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* HIDE DETAIL ARROWS */ 
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary {
+    list-style: none;
+} 
+
+/* Accordian Style */
+
+
+details {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+
+details summary{
+    box-sizing: border-box;
+    background: url("./blackadd.svg");
+    background-position:right;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: #272727;
+    background-origin: content-box;
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #272727;
+    box-shadow: -3vw 2.5vw #BEBEBE;
+    color: #D3D3D3;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+
+details[open] > summary {
+    box-sizing: border-box;
+    background: url("./blackminus.svg");
+    background-position:right;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-color: #272727;
+    background-origin: content-box;
+}
+
+details p, details ul {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #BEBEBE 0%, #BEBEBE 100%) no-repeat;
+    background-size: calc(100% - 3vw + 3px);
+    background-clip: border-box;
+    background-position: left;
+    color: #272727;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    border: 3px solid #272727;
+    box-shadow: -3vw 2vw #BEBEBE;
+    padding-right: 10px;
+    padding-left: 5px;
+    list-style-type:none;
+}
+
+@media screen and (min-width: 800px) {
+
+    h1 {
+        font-size: 100px;
+    }
+
+    .wrapper {
+        width: 600px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    details {
+        margin-top: 50px;
+    }
+
+    details summary {
+        padding: 20px;
+        box-shadow: -15px 20px #BEBEBE;
+    }
+
+    details p, details ul {
+        background-size: calc(100% - 15px + 3px);
+        box-shadow: -15px 20px #BEBEBE;
+        padding: 40px;
+        font-size: 20px;
+    }
+
+
+}
+
