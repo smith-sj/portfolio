@@ -1,8 +1,6 @@
 body {
-    height: 100vh;
     width: 95vw;
     display: block;
-    overflow: hidden;
     margin: 0 auto;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
@@ -18,7 +16,7 @@ a {
 
 .wrapper {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,10 +30,12 @@ h1 {
     width: 80%;
 }
 
+
 h2 {
     color: #272727;
     font-family: 'Work Sans', sans-serif;
 }
+
 
 /* HIDE DETAIL ARROWS */ 
 
@@ -80,15 +80,17 @@ details[open] > summary {
     box-sizing: border-box;
     background: url("./blackminus.svg");
     background-position:right;
-    background-size: 18px;
+    background-size: 20px;
     background-repeat: no-repeat;
     background-color: #272727;
+    color: yellow;
     background-origin: content-box;
+    box-shadow: -3vw 2.5vw yellow;
 }
 
 details p, details ul {
     box-sizing: border-box;
-    background: linear-gradient(to bottom, #BEBEBE 0%, #BEBEBE 100%) no-repeat;
+    background: linear-gradient(to bottom, yellow 0%, yellow 100%) no-repeat;
     background-size: calc(100% - 3vw + 3px);
     background-clip: border-box;
     background-position: left;
@@ -97,11 +99,29 @@ details p, details ul {
     margin: 0 auto;
     text-align: left;
     border: 3px solid #272727;
-    box-shadow: -3vw 2vw #BEBEBE;
+    box-shadow: -3vw 2vw yellow;
     padding-right: 10px;
     padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     list-style-type:none;
 }
+
+.socialicons img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+
+.socialicons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
+    justify-content: center;
+}
+
+
 
 @media screen and (min-width: 800px) {
 
