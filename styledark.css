@@ -22,6 +22,12 @@ a {
     align-items: center;
 }
 
+.portrait {
+    width: 50%;
+    /* border-radius: 50%;
+    box-shadow: -3vw 2.5vw grey; */
+}
+
 h1 {
     color: #272727;
     font-family: 'Montserrat', sans-serif;
@@ -107,6 +113,14 @@ details p, details ul {
     list-style-type:none;
 }
 
+.crt {
+    width: 60%;
+}
+
+details:last-child {
+    margin-bottom: 30px;
+}
+
 .socialicons img {
     height: 30px;
     width: 30px;
@@ -149,9 +163,13 @@ details p, details ul {
 
     details p, details ul {
         background-size: calc(100% - 15px + 3px);
-        box-shadow: -15px 20px #BEBEBE;
+        box-shadow: -15px 20px yellow;
         padding: 40px;
         font-size: 20px;
+    }
+
+    details[open] > summary {
+        box-shadow: -15px 20px yellow;
     }
 
 
