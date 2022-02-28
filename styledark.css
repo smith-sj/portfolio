@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
-    background-color: #EEEEEE;
+    background-color:#EEEEEE;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -119,14 +119,6 @@ details p, details ul {
 
 /* BLOG */
 
-label {
-    border: 2px solid black;
-    padding: 7px;
-    border-radius: 10px;
-    line-height: 2.5;
-    background-color: yellow;
-}
-
 
 .blog-container {
     margin-top: 50px;
@@ -136,8 +128,6 @@ label {
 #general:checked + label {
     background:transparent;
 }
-
-
 #general:checked ~ .blog-tiles .general {
     display: none;
   }
@@ -145,7 +135,6 @@ label {
 #news:checked + label {
     background:transparent;
 }
-
 #news:checked ~ .blog-tiles .news {
     display: none;
   }
@@ -153,7 +142,6 @@ label {
 #projects:checked + label {
     background:transparent;
 }
-
 #projects:checked ~ .blog-tiles .projects {
     display: none;
   }
@@ -161,10 +149,17 @@ label {
 #tutorials:checked + label {
     background:transparent;
   }
-
 #tutorials:checked ~ .blog-tiles .tutorials {
     display: none;
   }
+
+  label {
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10px;
+    line-height: 2.5;
+    background-color: yellow;
+}
 
 header {
     width: 80%
