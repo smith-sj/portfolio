@@ -28,11 +28,8 @@ main {
     width: 80%;
 }
 
-.portrait {
-    width: 50%;
-    /* border-radius: 50%;
-    box-shadow: -3vw 2.5vw grey; */
-}
+
+/* TYPOGRAPHY */
 
 h1 {
     color: #272727;
@@ -52,7 +49,7 @@ h3 {
     margin:0;
 }
 
-/* HIDE DETAIL ARROWS */ 
+/* HIDE DROPDOWN ARROWS */ 
 
 details summary::-webkit-details-marker {
     display: none;
@@ -62,7 +59,7 @@ details > summary {
     list-style: none;
 } 
 
-/* Accordian Style */
+/* DROPDOWN STYLES */
 
 
 details {
@@ -120,24 +117,7 @@ details p, details ul {
     list-style-type:none;
 }
 
-.crt {
-    width: 60%;
-}
-
-
-.socialicons img {
-    height: 30px;
-    width: 30px;
-    padding: 10px;
-}
-
-.socialicons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: bottom;
-    justify-content: center;
-}
+/* BLOG */
 
 label {
     border: 2px solid black;
@@ -158,7 +138,6 @@ label {
 }
 
 
-/* #general:checked ~ .tile:not(.general) { */
 #general:checked ~ .blog-tiles .general {
     display: none;
   }
@@ -167,7 +146,6 @@ label {
     background:transparent;
 }
 
-/* #news:checked ~ .tile:not(.news) { */
 #news:checked ~ .blog-tiles .news {
     display: none;
   }
@@ -176,7 +154,6 @@ label {
     background:transparent;
 }
 
-/* #projects:checked ~ .tile:not(.projects) { */
 #projects:checked ~ .blog-tiles .projects {
     display: none;
   }
@@ -185,7 +162,6 @@ label {
     background:transparent;
   }
 
-/* #tutorials:checked ~ .tile:not(.tutorials) { */
 #tutorials:checked ~ .blog-tiles .tutorials {
     display: none;
   }
@@ -263,9 +239,13 @@ input:not(input:checked) ~ .blog-tiles .unfiltered {
     column-gap: 5px;
 }
 
+/* FOOTER */
+
 footer {
     margin: 20px;
 }
+
+/* DESKTOP LAYOUT */
 
 @media screen and (min-width: 800px) {
 
