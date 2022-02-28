@@ -5,6 +5,8 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     background-color: #EEEEEE;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -46,6 +48,9 @@ h2 {
     font-size: 35px;
 }
 
+h3 {
+    margin:0;
+}
 
 /* HIDE DETAIL ARROWS */ 
 
@@ -136,11 +141,12 @@ details p, details ul {
 
 label {
     border: 2px solid black;
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     line-height: 2.5;
     background-color: yellow;
 }
+
 
 .blog-container {
     margin-top: 50px;
@@ -153,13 +159,8 @@ label {
 
 
 /* #general:checked ~ .tile:not(.general) { */
-#general:checked ~ .general {
-
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
+#general:checked ~ .blog-tiles .general {
+    display: none;
   }
 
 #news:checked + label {
@@ -167,13 +168,8 @@ label {
 }
 
 /* #news:checked ~ .tile:not(.news) { */
-#news:checked ~ .news {
-
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
+#news:checked ~ .blog-tiles .news {
+    display: none;
   }
 
 #projects:checked + label {
@@ -181,13 +177,8 @@ label {
 }
 
 /* #projects:checked ~ .tile:not(.projects) { */
-#projects:checked ~ .projects {
-
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
+#projects:checked ~ .blog-tiles .projects {
+    display: none;
   }
 
 #tutorials:checked + label {
@@ -195,12 +186,8 @@ label {
   }
 
 /* #tutorials:checked ~ .tile:not(.tutorials) { */
-#tutorials:checked ~ .tutorials {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
+#tutorials:checked ~ .blog-tiles .tutorials {
+    display: none;
   }
 
 header {
@@ -214,34 +201,87 @@ header {
 
 .blog-container {
     margin-bottom: 50px;
+    width: 100%;
+}
+
+.post-date {
+    display: block;
+    font-size: 15px;
 }
 
 .post-category {
-    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: auto;
 }
+
 
 
 .tile {
-    background:#BEBEBE;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #BEBEBE;
     padding: 10px;
-    margin-bottom: 10px;
+    flex: 30%;
+    width: 45%;
+    margin-bottom: 5px;
 }
 
 .unfiltered {
+    height: 110px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
     background-color: #BEBEBE;
     padding: 10px;
-    margin-bottom: 10px;
+    flex: 30%;
+    width: 45%;
+    margin-bottom: 5px;
 }
 
-input:not(input:checked) ~ .unfiltered {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
+.tile:hover {
+    background-color: yellow;
+}
+
+.unfiltered:hover {
+    background-color: yellow;
+}
+
+input:not(input:checked) ~ .blog-tiles .unfiltered {
+    display: none;
+}
+
+.blog-tiles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+    flex-wrap: wrap;
+    align-content:space-between;
+    column-gap: 5px;
+}
+
+footer {
+    margin: 20px;
 }
 
 @media screen and (min-width: 800px) {
+
+    .blog-tiles {
+        column-gap: 10px;
+    }
+
+    .tile {
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .unfiltered {
+        height: 150px;
+        margin-bottom: 10px;
+    }
 
     h1 {
         font-size: 100px;
@@ -254,6 +294,7 @@ input:not(input:checked) ~ .unfiltered {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
+        background-color: #EEEEEE;
     }
 
     details {

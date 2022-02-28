@@ -1,102 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styledark.css">
     <title>Stephen Smith Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet"></head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 <body>
     <div class="wrapper">
-    <header>
-    <h1>Stephen Smith</h1>
-    </header>
-    <main>
-    <details>
-        <summary>About</summary>
-        <p>Hi, my name is Stephen and I'm currently studying full-stack web development. In mid 2021, I started to learn 
-        programming from the generous online coder community. I quickly fell in love with writing code and, in early 2022,
-        decided to sign up to Coder Academy's Web Dev Bootcamp. I've been a performing and recording musician for most of
-        my life and have worked in many industries from hospitality, to e-commerce and even constructi
-        </p>
-    </details>
+        <header>
+            <h1>Stephen Smith</h1>
+        </header>
+        <main>
+            <details>
+                <summary>About</summary>
+                <p>Hi, my name is Stephen and I'm currently studying full-stack web development. In mid 2021, I started
+                    to learn
+                    programming from the generous online coder community. I quickly fell in love with writing code and,
+                    in early 2022,
+                    decided to sign up to Coder Academy's Web Dev Bootcamp. I've been a performing and recording
+                    musician for most of
+                    my life and have worked in many industries from hospitality, to e-commerce and even constructi
+                </p>
+            </details>
 
-    <details>
-        <summary>Projects</summary>
-        <ul>
-        <li><a href="https://smith-sj.github.io/CSS-only-flash-cards/"> CSS Only Flash Cards </a></li>
-        <li><a href="https://smith-sj.github.io/css-zen-garden/"> CSS Zen Garden </a></ul>
-        </ul>
-    </details>
+            <details>
+                <summary>Projects</summary>
+                <ul>
+                    <li><a href="https://smith-sj.github.io/CSS-only-flash-cards/"> CSS Only Flash Cards </a></li>
+                    <li><a href="https://smith-sj.github.io/css-zen-garden/"> CSS Zen Garden </a>
+                </ul>
+                </ul>
+            </details>
 
-    <details>
-        <summary>Contact</summary>
-        <p>Email me at stephen@sjsmith.dev<br> Connect with me on
-            Twitter, LinkedIn and GitHub.
-        </p>
-    </details>
+            <details>
+                <summary>Contact</summary>
+                <p>Email me at stephen@sjsmith.dev<br> Connect with me on
+                    Twitter, LinkedIn and GitHub.
+                </p>
+            </details>
 
-    <div class="blog-container">
-    <h2> Blog </h2>
-    <span> Deselect categories to hide them for blogroll.</span>
-        <input type="checkbox" id="general" name="blog-category" checked hidden/>
-        <label for="general">General</label>
-        <input type="checkbox" id="news" name="blog-category" checked hidden/>
-        <label for="news">News</label>
-        <input type="checkbox" id="projects" name="blog-category" checked hidden/>
-        <label for="projects">Projects</label>
-        <input type="checkbox" id="tutorials" name="blog-category" checked hidden/>
-        <label for="tutorials">Tutorials</label>
-        <div class="blog-tile tile tutorials">
-            <h3 class="post-title">Checkbox Hack Tutorial</h3>
-            <span class="post-date">29th February 2022</span>
-            <span class="post-category">tutorial</span>
-        </div>
-        <div class="blog-tile tile news">
-            <h3 class="post-title">Some Exciting News!</h3>
-            <span class="post-summary">20th February 2022</span>
-            <span class="post-category">news</span>
-        </div>
-        <div class="blog-tile tile projects">
-            <h3 class="post-title">CSS Only Flash Cards</h3>
-            <span class="post-summary">18th February 2022</span>
-            <span class="post-category">projects</span>
-        </div>
-        <div class="blog-tile tile general">
-            <h3 class="post-title">Some random information</h3>
-            <span class="post-summary">12th February 2022</span>
-            <span class="post-category">general</span>
-        </div>
+            <div class="blog-container">
+                <h2> Blog </h2>
+                <input type="checkbox" id="general" name="blog-category" checked hidden />
+                <label for="general">General</label>
+                <input type="checkbox" id="news" name="blog-category" checked hidden />
+                <label for="news">News</label>
+                <input type="checkbox" id="projects" name="blog-category" checked hidden />
+                <label for="projects">Projects</label>
+                <input type="checkbox" id="tutorials" name="blog-category" checked hidden />
+                <label for="tutorials">Tutorials</label>
 
-        <!-- UNFILTERED COPY -->
+                <!-- BLOG TILES -->
 
-        <div class="unfiltered">
-            <h3 class="post-title">Checkbox Hack Tutorial</h3>
-            <span class="post-date">29th February 2022</span>
-            <span class="post-category">tutorial</span>
-        </div>
-        <div class="unfiltered">
-            <h3 class="post-title">Some Exciting News!</h3>
-            <span class="post-summary">20th February 2022</span>
-            <span class="post-category">news</span>
-        </div>
-        <div class="unfiltered">
-            <h3 class="post-title">CSS Only Flash Cards</h3>
-            <span class="post-summary">18th February 2022</span>
-            <span class="post-category">projects</span>
-        </div>
-        <div class="unfiltered">
-            <h3 class="post-title">Some random information</h3>
-            <span class="post-summary">12th February 2022</span>
-            <span class="post-category">general</span>
-        </div>
+                <div class="blog-tiles">
+                    <div class="blog-tile tile tutorials">
+                        <h3 class="post-title">Checkbox Hack Tutorial</h3>
+                        <span class="post-date">29.02.22</span>
+                        <span class="post-category">tutorial</span>
+                    </div>
+                    <div class="blog-tile tile news">
+                        <h3 class="post-title">Some Exciting News!</h3>
+                        <span class="post-date">20.02.22</span>
+                        <span class="post-category">news</span>
+                    </div>
+                    <div class="blog-tile tile projects">
+                        <h3 class="post-title">CSS Only Flash Cards</h3>
+                        <span class="post-date">18.02.22</span>
+                        <span class="post-category">projects</span>
+                    </div>
+                    <div class="blog-tile tile general">
+                        <h3 class="post-title">Some random information</h3>
+                        <span class="post-date">12.02.22</span>
+                        <span class="post-category">general</span>
+                    </div>
+                    <div class="blog-tile tile projects">
+                        <h3 class="post-title">CSS Only Flash Cards</h3>
+                        <span class="post-date">18.02.22</span>
+                        <span class="post-category">projects</span>
+                    </div>
+                    <div class="blog-tile tile general">
+                        <h3 class="post-title">Some random information</h3>
+                        <span class="post-date">12.02.22</span>
+                        <span class="post-category">general</span>
+                    </div>
+
+                    <!-- UNFILTERED COPY -->
+
+                    <div class="unfiltered">
+                        <h3 class="post-title">Checkbox Hack Tutorial</h3>
+                        <span class="post-date">29.02.22</span>
+                        <span class="post-category">tutorial</span>
+                    </div>
+                    <div class="unfiltered">
+                        <h3 class="post-title">Some Exciting News!</h3>
+                        <span class="post-date">20.02.22</span>
+                        <span class="post-category">news</span>
+                    </div>
+                    <div class="unfiltered">
+                        <h3 class="post-title">CSS Only Flash Cards</h3>
+                        <span class="post-date">18.02.22</span>
+                        <span class="post-category">projects</span>
+                    </div>
+                    <div class="unfiltered">
+                        <h3 class="post-title">Some random information</h3>
+                        <span class="post-date">12.02.22</span>
+                        <span class="post-category">general</span>
+                    </div>
+                    <div class="unfiltered">
+                        <h3 class="post-title">CSS Only Flash Cards</h3>
+                        <span class="post-date">18.02.22</span>
+                        <span class="post-category">projects</span>
+                    </div>
+                    <div class="unfiltered">
+                        <h3 class="post-title">Some random information</h3>
+                        <span class="post-date">12.02.22</span>
+                        <span class="post-category">general</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>© Stephen Smith 2022</footer>
     </div>
+ 
 
-    </div>
-    </main>
 </body>
+
 </html>
