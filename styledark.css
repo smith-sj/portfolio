@@ -120,11 +120,6 @@ details p, details ul {
 /* BLOG */
 
 
-.blog-container {
-    margin-top: 50px;
-    width: 80%;
-}
-
 #general:checked + label {
     background:transparent;
 }
@@ -187,7 +182,6 @@ header {
 }
 
 
-
 .tile {
     height: 110px;
     display: flex;
@@ -195,8 +189,7 @@ header {
     cursor: pointer;
     background-color: #BEBEBE;
     padding: 10px;
-    flex: 30%;
-    width: 45%;
+    flex: 40%;
     margin-bottom: 5px;
 }
 
@@ -207,8 +200,7 @@ header {
     flex-direction: column;
     background-color: #BEBEBE;
     padding: 10px;
-    flex: 30%;
-    width: 45%;
+    flex: 40%;
     margin-bottom: 5px;
 }
 
