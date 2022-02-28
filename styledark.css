@@ -151,6 +151,7 @@ label {
     background:transparent;
 }
 
+
 /* #general:checked ~ .tile:not(.general) { */
 #general:checked ~ .general {
 
@@ -206,11 +207,6 @@ header {
     width: 80%
 }
 
-.blog-tile {
-    background-color: #BEBEBE;
-    padding: 10px;
-    margin-top: 15px;
-}
 
 .blog-header {
     width: 80%;
@@ -224,6 +220,26 @@ header {
     display: block;
 }
 
+
+.tile {
+    background:#BEBEBE;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.unfiltered {
+    background-color: #BEBEBE;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input:not(input:checked) ~ .unfiltered {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+}
 
 @media screen and (min-width: 800px) {
 
