@@ -22,6 +22,10 @@ a {
     align-items: center;
 }
 
+main {
+    width: 80%;
+}
+
 .portrait {
     width: 50%;
     /* border-radius: 50%;
@@ -33,13 +37,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size:15vw;
     font-weight: 900;
-    width: 80%;
 }
 
 
 h2 {
     color: #272727;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
 }
 
 
@@ -57,13 +61,13 @@ details > summary {
 
 
 details {
-    width: 100%;
     display: block;
     margin-top: 20px;
 }
 
 
 details summary{
+    cursor: pointer;
     box-sizing: border-box;
     background: url("./blackadd.svg");
     background-position:right;
@@ -71,7 +75,6 @@ details summary{
     background-repeat: no-repeat;
     background-color: #272727;
     background-origin: content-box;
-    width: 80%;
     margin: 0 auto;
     border: 3px solid #272727;
     box-shadow: -3vw 2.5vw #BEBEBE;
@@ -101,7 +104,6 @@ details p, details ul {
     background-clip: border-box;
     background-position: left;
     color: #272727;
-    width: 80%;
     margin: 0 auto;
     text-align: left;
     border: 3px solid #272727;
@@ -117,9 +119,6 @@ details p, details ul {
     width: 60%;
 }
 
-details:last-child {
-    margin-bottom: 30px;
-}
 
 .socialicons img {
     height: 30px;
@@ -135,6 +134,83 @@ details:last-child {
     justify-content: center;
 }
 
+label {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 2.5;
+}
+
+.blog-container {
+    margin-top: 50px;
+    width: 80%;
+}
+
+#general:checked + label {
+    background:yellow;
+}
+
+#general:checked ~ .tile:not(.general) {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+#news:checked + label {
+    background:yellow;
+}
+
+#news:checked ~ .tile:not(.news) {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+#projects:checked + label {
+    background:yellow;
+}
+
+#projects:checked ~ .tile:not(.projects) {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+#tutorials:checked + label {
+    background:yellow;
+  }
+
+#tutorials:checked ~ .tile:not(.tutorials) {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+header {
+    width: 80%
+}
+
+.blog-tile {
+    background-color: #BEBEBE;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.blog-header {
+    width: 80%;
+}
+
+.blog-container {
+    margin-bottom: 50px;
+}
 
 
 @media screen and (min-width: 800px) {
