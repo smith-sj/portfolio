@@ -121,31 +121,59 @@ details p, details ul {
 
 
 #general:checked + label {
-    background:transparent;
+    background:yellow;
 }
 #general:checked ~ .blog-tiles .general {
-    display: none;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #BEBEBE;
+    padding: 10px;
+    flex: 40%;
+    margin-bottom: 5px;
   }
 
 #news:checked + label {
-    background:transparent;
+    background:yellow;
 }
 #news:checked ~ .blog-tiles .news {
-    display: none;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #BEBEBE;
+    padding: 10px;
+    flex: 40%;
+    margin-bottom: 5px;
   }
 
 #projects:checked + label {
-    background:transparent;
+    background:yellow;
 }
 #projects:checked ~ .blog-tiles .projects {
-    display: none;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #BEBEBE;
+    padding: 10px;
+    flex: 40%;
+    margin-bottom: 5px;
   }
 
 #tutorials:checked + label {
-    background:transparent;
+    background:yellow;
   }
 #tutorials:checked ~ .blog-tiles .tutorials {
-    display: none;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #BEBEBE;
+    padding: 10px;
+    flex: 40%;
+    margin-bottom: 5px;
   }
 
 label {
@@ -153,7 +181,7 @@ label {
     padding: 7px;
     border-radius: 10px;
     line-height: 2.5;
-    background-color: yellow;
+    background-color: transparent;
 }
 
 header {
@@ -183,14 +211,7 @@ header {
 
 
 .tile {
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    background-color: #BEBEBE;
-    padding: 10px;
-    flex: 40%;
-    margin-bottom: 5px;
+    display: none;
 }
 
 .unfiltered {
@@ -216,7 +237,7 @@ label:focus {
     background-color: yellow;
 }
 
-input:not(input:checked) ~ .blog-tiles .unfiltered {
+input:checked ~ .blog-tiles .unfiltered {
     display: none;
 }
 
