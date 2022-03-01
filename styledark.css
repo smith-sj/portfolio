@@ -28,6 +28,10 @@ main {
     width: 80%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* TYPOGRAPHY */
 
@@ -46,6 +50,11 @@ h2 {
 }
 
 h3 {
+    color: #272727;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+h4 {
     margin:0;
 }
 
@@ -119,7 +128,6 @@ details p, details ul {
 
 /* BLOG */
 
-
 #general:checked + label {
     background:yellow;
 }
@@ -178,10 +186,11 @@ details p, details ul {
 
 label {
     border: 2px solid black;
-    padding: 7px;
+    padding: 5px;
     border-radius: 10px;
     line-height: 2.5;
     background-color: transparent;
+    font-size: 15px;
 }
 
 header {
