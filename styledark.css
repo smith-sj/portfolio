@@ -148,7 +148,7 @@ details p, details ul {
     display: none;
   }
 
-  label {
+label {
     border: 2px solid black;
     padding: 7px;
     border-radius: 10px;
@@ -205,6 +205,10 @@ header {
 }
 
 .tile:hover {
+    background-color: yellow;
+}
+
+label:focus {
     background-color: yellow;
 }
 
