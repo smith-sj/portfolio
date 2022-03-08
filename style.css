@@ -349,10 +349,13 @@ nav span {
     display: inline-block;
 }
 
-/*Simple css to style it like a toggle switch*/
+
+/* MODE TOGGLE */
+
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
+    justify-content: end;
 }
   .theme-switch {
     display: inline-block;
@@ -393,7 +396,7 @@ nav span {
   }
   
   input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(36px);
   }
   
   .slider.round {
@@ -434,29 +437,6 @@ nav span {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        background-color: #272727;
+        background-color: var(--bg-color);
     }
-
-    details {
-        margin-top: 50px;
-    }
-
-    details summary {
-        padding: 20px;
-        box-shadow: -15px 20px #BEBEBE;
-    }
-
-    details p, details ul {
-        background-size: calc(100% - 15px + 3px);
-        box-shadow: -15px 20px yellow;
-        padding: 40px;
-        font-size: 20px;
-    }
-
-    details[open] > summary {
-        box-shadow: -15px 20px yellow;
-    }
-
-
 }
-
