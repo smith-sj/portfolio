@@ -31,9 +31,9 @@
     --shadow-open-color: #303030;
     --main-font-color: #D3D3D3;
     --frame-title-color: #303030;
-    --frame-title-open: yellow;
+    --frame-title-open: #303030;
     --blog-tile-font-color:#101010;
-    --blog-tile-bg-color:;
+    --blog-tile-bg-color:#D3D3D3;
     --blog-filter-color: #D3D3D3;
     --bf-checked-bg-color: yellow;
     --bf-checked-border-color: yellow;
