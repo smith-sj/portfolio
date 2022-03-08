@@ -357,18 +357,17 @@ nav span {
 /* MODE TOGGLE */
 
 .theme-switch-wrapper {
-    margin-top: 10px;
-    margin-right: 10px;
+    margin:10px;
+    flex-direction: row;
     display: flex;
-    align-items: center;
     justify-content: end;
+    align-items: center!important;
 }
   .theme-switch {
-    display: inline-block;
-    height: 15px;
-    position: relative;
-    width: 50px;
+    height: 26px;
+    width: 62px;
     border: none;
+    margin:0;
   }
   
   .theme-switch input {
@@ -378,11 +377,12 @@ nav span {
   .slider {
     background-color: var(--shadow-closed-color);
     cursor: pointer;
-    height: 26px;
-    width: 62px;
+    height: 100%;
+    width: 100%;
     transition: .4s;
     border-radius: 34px;
   }
+
   
   .slider:before {
     display: block;
@@ -398,11 +398,22 @@ nav span {
     border-radius: 50%;
     transition: 0.5s;
   }
-  
+
   
   input:checked + .slider:before {
     transform: rotate(-180deg) translateX(-32px);
     background-image: url(./assets/darkmode.svg);
+  }
+
+  .lightlb {
+    margin: 5px;
+    font-size: 14px;
+    color: #101010;
+  }
+  .darklb {
+    margin: 5px;
+    font-size: 14px;
+    color: #EEEEEE;
   }
 
 
