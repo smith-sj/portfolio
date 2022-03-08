@@ -400,6 +400,7 @@ nav span {
     transition: .4s;
     width: 20px;
     border-radius: 50%;
+    transition: 0.5s;
   }
   
   input:checked + .slider {
@@ -407,7 +408,7 @@ nav span {
   }
   
   input:checked + .slider:before {
-    transform: rotate(-360deg) translateX(32px);
+    transform: rotate(-180deg) translateX(-32px);
     background-image: url(./assets/darkmode.svg);
     background-color: transparent;
   }
