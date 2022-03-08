@@ -1,3 +1,48 @@
+:root {
+    /* colors */
+    --bg-color: #EEEEEE;
+    --highlight-color: yellow;
+    --frame-closed-color: #272727;
+    --frame-open-color:#272727;
+    --shadow-closed-color: #BEBEBE;
+    --shadow-open-color: yellow;
+    --main-font-color: #272727;
+    --frame-title-color: #BEBEBE;
+    --frame-title-open: yellow;
+    --blog-tile-font-color:#272727;
+    --blog-tile-bg-color:#BEBEBE;
+    --blog-filter-color: #272727;
+    --bf-checked-bg-color: yellow;
+    --bf-checked-border-color:#272727;
+    --bf-checked-font-color: #272727;
+    /* assets */
+    --expand-button: url("./assets/lightmodeexpand.svg");
+    --collapse-button: url("./assets/lightmodecollapse.svg");
+
+}
+
+[data-theme="dark"] {
+    /* colors */
+    --bg-color: #101010;
+    --highlight-color: yellow;
+    --frame-closed-color: #D3D3D3;
+    --frame-open-color:yellow;
+    --shadow-closed-color: #303030;
+    --shadow-open-color: #303030;
+    --main-font-color: #D3D3D3;
+    --frame-title-color: #303030;
+    --frame-title-open: yellow;
+    --blog-tile-font-color:#101010;
+    --blog-tile-bg-color:;
+    --blog-filter-color: #D3D3D3;
+    --bf-checked-bg-color: yellow;
+    --bf-checked-border-color: yellow;
+    --bf-checked-font-color: #101010;
+    /* assets */
+    --expand-button: url("./assets/darkmodeexpand.svg");
+    --collapse-button: url("./assets/darkmodecollapse.svg");
+}
+
 /* MAIN LAYOUT */
 
 body {
@@ -6,9 +51,10 @@ body {
     margin: 0 auto;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
-    background-color:#EEEEEE;
+    background-color: var(--bg-color);
     overflow-y: scroll;
     overflow-x: hidden;
+    
 }
 
 .wrapper {
@@ -35,7 +81,7 @@ main {
 /* TYPOGRAPHY */
 
 h1 {
-    color: #272727;
+    color: var(--main-font-color);
     font-family: 'Montserrat', sans-serif;
     font-size:15vw;
     font-weight: 900;
@@ -44,13 +90,14 @@ h1 {
 
 
 h2 {
-    color: #272727;
+    color: var(--main-font-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
+    margin-bottom: 0;
 }
 
 h3 {
-    color: #272727;
+    color: var(--main-font-color);
     font-family: 'Ubuntu Mono', monospace;
 }
 
@@ -60,11 +107,25 @@ h4 {
 
 a {
     display: block;
-    color: #272727;
+    color: var(--blog-tile-font-color);
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 700;
 }
 
+p {color: var(--main-font-color);}
+
+.welcome {
+    color: var(--main-font-color);;
+}
+
+details a {
+    color: var(--main-font-color);;
+}
+
+h2 ~ a {
+    color: var(--main-font-color);
+    margin-bottom: 20px;
+}
 
 /* EXPANDER BOXES */
 
@@ -82,53 +143,55 @@ details > summary {
 
 details {
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 details summary{
     cursor: pointer;
     box-sizing: border-box;
-    background: url("./blackadd.svg");
+    background: var(--expand-button);
     background-position:right;
     background-size: 20px;
     background-repeat: no-repeat;
-    background-color: #272727;
+    background-color: var(--frame-closed-color);
     background-origin: content-box;
     margin: 0 auto;
-    border: 3px solid #272727;
-    box-shadow: -3vw 2.5vw #BEBEBE;
-    color: #D3D3D3;
+    border: 3px solid var(--frame-closed-color);
+    box-shadow: -4vw 4vw var(--shadow-closed-color);
+    color: var(--frame-title-color);
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 700;
     font-size: 18px;
     padding: 10px;
 }
 
+
 details[open] > summary {
     box-sizing: border-box;
-    background: url("./blackminus.svg");
+    background: var(--collapse-button);
     background-position:right;
     background-size: 20px;
     background-repeat: no-repeat;
-    background-color: #272727;
-    color: yellow;
+    background-color: var(--frame-open-color);
+    border: 3px solid var(--frame-open-color);
+    color: var(--frame-title-open);
     background-origin: content-box;
-    box-shadow: -3vw 2.5vw yellow;
+    box-shadow: -4vw 4vw var(--shadow-open-color);
 }
 
 details p, details ul {
     box-sizing: border-box;
-    background: linear-gradient(to bottom, yellow 0%, yellow 100%) no-repeat;
-    background-size: calc(100% - 3vw + 3px);
+    background: linear-gradient(to bottom, var(--shadow-open-color) 0%, var(--shadow-open-color) 100%) no-repeat;
+    background-size: calc(100% - 4vw + 3px);
     background-clip: border-box;
     background-position: left;
-    color: #272727;
+    color: var(--main-font-color);
     margin: 0 auto;
     text-align: left;
-    border: 3px solid #272727;
-    box-shadow: -3vw 2vw yellow;
-    padding-right: 10px;
-    padding-left: 5px;
+    border: 3px solid var(--frame-open-color);
+    box-shadow: -4vw 4vw var(--shadow-open-color);
+    padding-right: 15px;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type:none;
@@ -138,72 +201,69 @@ details p, details ul {
 
 /* category filters */
 
-#general:checked + label {
-    background:yellow;
+
+label {
+    display: inline-block;
+    border: 2px solid var(--blog-filter-color);
+    color: var(--blog-filter-color);
+    padding: 5px;
+    border-radius: 12px;
+    background-color: transparent;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
+
+input:checked + label {
+    background:var(--bf-checked-bg-color);
+    color: var(--bf-checked-font-color);
+    border: 2px solid var(--bf-checked-border-color);
+}
+
 #general:checked ~ .blog-tiles .general {
     height: 110px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    background-color: #BEBEBE;
+    background-color: var(--blog-tile-bg-color);
     padding: 10px;
     flex: 40%;
     margin-bottom: 5px;
   }
 
-#news:checked + label {
-    background:yellow;
-}
 #news:checked ~ .blog-tiles .news {
     height: 110px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    background-color: #BEBEBE;
+    background-color: var(--blog-tile-bg-color);
     padding: 10px;
     flex: 40%;
     margin-bottom: 5px;
   }
 
-#projects:checked + label {
-    background:yellow;
-}
 #projects:checked ~ .blog-tiles .projects {
     height: 110px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    background-color: #BEBEBE;
+    background-color: var(--blog-tile-bg-color);
     padding: 10px;
     flex: 40%;
     margin-bottom: 5px;
   }
 
-#tutorials:checked + label {
-    background:yellow;
-  }
 #tutorials:checked ~ .blog-tiles .tutorials {
     height: 110px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    background-color: #BEBEBE;
+    background-color: var(--blog-tile-bg-color);
     padding: 10px;
     flex: 40%;
     margin-bottom: 5px;
   }
 
-
-
-label {
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    line-height: 2.5;
-    background-color: transparent;
-    font-size: 15px;
-}
 
 .post-date {
     font-weight: lighter;
@@ -224,22 +284,18 @@ label {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background-color: #BEBEBE;
+    background-color: var(--blog-tile-bg-color);
     padding: 10px;
     flex: 40%;
     margin-bottom: 5px;
 }
 
 .tile:hover {
-    background-color: yellow;
-}
-
-label:focus {
-    background-color: yellow;
+    background-color: var(--highlight-color);
 }
 
 .unfiltered:hover {
-    background-color: yellow;
+    background-color: var(--highlight-color);
 }
 
 input:checked ~ .blog-tiles .unfiltered {
@@ -265,8 +321,12 @@ header a {
 footer {
     margin: 20px;
     text-align: center;
+    color: var(--main-font-color);
 }
 
+footer a {
+    color: var(--main-font-color);
+}
 
 /* BLOG NAV */
 
@@ -285,6 +345,65 @@ nav span {
 }
 
 
+.filters {
+    display: inline-block;
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+  .theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 60px;
+    border: none;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
 
 /* DESKTOP LAYOUT */
 
@@ -315,7 +434,7 @@ nav span {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        background-color: #EEEEEE;
+        background-color: #272727;
     }
 
     details {

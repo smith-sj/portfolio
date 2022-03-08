@@ -2,155 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styledark.css">
-    <title>Stephen Smith Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styledark.css">
+  <title>Stephen Smith Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Stephen Smith</h1>
-        </header>
-
-        <main>
-            <section class="welcome">
-                <span>Welcome to my Portfolio; It's all CSS, baby!</span>
-            </section>
-
-            <!-- EXPANDER BOXES -->
-
-            <section class="expander-boxes">
-                <details>
-                    <summary>About</summary>
-                    <p>Hi, my name is Stephen and I'm currently studying full-stack web development. In mid 2021, I
-                        started
-                        to learn
-                        programming from the generous online coder community. I quickly fell in love with writing code
-                        and,
-                        in early 2022,
-                        decided to sign up to Coder Academy's Web Dev Bootcamp. I've been a performing and recording
-                        musician for most of
-                        my life and have worked in many industries from hospitality, to e-commerce and even
-                        construction.
-                    </p>
-                </details>
-
-                <details>
-                    <summary>Projects</summary>
-                    <ul>
-                        <li><a href="https://smith-sj.github.io/CSS-only-flash-cards/"> CSS Only Flash Cards </a></li>
-                        <li><a href="https://smith-sj.github.io/css-zen-garden/"> CSS Zen Garden </a>
-                    </ul>
-                    </ul>
-                </details>
-
-                <details>
-                    <summary>Contact</summary>
-                    <p>Email me at stephen@sjsmith.dev<br> Connect with me on
-                        Twitter, LinkedIn and GitHub.
-                    </p>
-                </details>
-            </section>
-
-            <!-- RECENT POSTS -->
-
-            <section class="recent-posts">
-                <h2>Recent Posts</h2>
-                <a href="./blog.html">Blog Archive</a>
-
-                <!-- CATEGORY FILTERS -->
-
-                <input type="checkbox" id="general" name="blog-category" hidden />
-                <label for="general">General</label>
-                <input type="checkbox" id="news" name="blog-category" hidden />
-                <label for="news">News</label>
-                <input type="checkbox" id="projects" name="blog-category" hidden />
-                <label for="projects">Projects</label>
-                <input type="checkbox" id="tutorials" name="blog-category" hidden />
-                <label for="tutorials">Tutorials</label>
-
-                <!-- POST TILES -->
-
-                <div class="blog-tiles">
-                    <a href="./blog-posts/post6.html" class="blog-tile tile tutorials">
-                        <h4 class="post-title">Checkbox Hack Tutorial</h4>
-                        <span class="post-date">29.02.22</span>
-                        <span class="post-category">tutorials</span>
-                    </a>
-                    <a href="./blog-posts/post5.html" class="blog-tile tile projects">
-                        <h4 class="post-title">Pure CSS Flash Cards</h4>
-                        <span class="post-date">26.02.22</span>
-                        <span class="post-category">projects</span>
-                    </a>
-                    <a href="./blog-posts/post4.html" class="blog-tile tile general">
-                        <h4 class="post-title">What Are CSS Blend Modes?</h4>
-                        <span class="post-date">24.02.22</span>
-                        <span class="post-category">general</span>
-                    </a>
-                    <a href="./blog-posts/post3.html" class="blog-tile tile projects">
-                        <h4 class="post-title">CSS Zen Garden Activity</h4>
-                        <span class="post-date">21.02.22</span>
-                        <span class="post-category">projects</span>
-                    </a>
-                    <a href="./blog-posts/post2.html" class="blog-tile tile general">
-                        <h4 class="post-title">My Journey to Bootcamp</h4>
-                        <span class="post-date">18.02.22</span>
-                        <span class="post-category">general</span>
-                    </a>
-                    <a href="./blog-posts/post1.html" class="blog-tile tile general news">
-                        <h4 class="post-title">Web Dev Bootcamp Kicks Off</h4>
-                        <span class="post-date">14.02.22</span>
-                        <span class="post-category">general, news</span>
-                    </a>
-
-                    <!-- UNFILTERED COPY -->
-
-                    <a href="./blog-posts/post6.html" class="unfiltered">
-                        <h4 class="post-title">Checkbox Hack Tutorial</h4>
-                        <span class="post-date">29.02.22</span>
-                        <span class="post-category">tutorials</span>
-                    </a>
-                    <a href="./blog-posts/post5.html" class="unfiltered">
-                        <h4 class="post-title">Pure CSS Flash Cards</h4>
-                        <span class="post-date">26.02.22</span>
-                        <span class="post-category">projects</span>
-                    </a>
-                    <a href="./blog-posts/post4.html" class="unfiltered">
-                        <h4 class="post-title">What Are CSS Blend Modes?</h4>
-                        <span class="post-date">24.02.22</span>
-                        <span class="post-category">general</span>
-                    </a>
-                    <a href="./blog-posts/post3.html" class="unfiltered">
-                        <h4 class="post-title">CSS Zen Garden Activity</h4>
-                        <span class="post-date">21.02.22</span>
-                        <span class="post-category">projects</span>
-                    </a>
-                    <a href="./blog-posts/post2.html" class="unfiltered">
-                        <h4 class="post-title">My Journey to Bootcamp</h4>
-                        <span class="post-date">18.02.22</span>
-                        <span class="post-category">general</span>
-                    </a>
-                    <a href="./blog-posts/post1.html" class="unfiltered">
-                        <h4 class="post-title">Web Dev Bootcamp Kicks Off</h4>
-                        <span class="post-date">14.02.22</span>
-                        <span class="post-category">general, news</span>
-                    </a>
-                </div>
-            </section>
+  <div class="wrapper">
+    <header>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+      <script src="./mode-switch.js"></script>
     </div>
+    
+
+      <h1>Stephen Smith</h1>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <span>Welcome to my Portfolio; It's all CSS, baby!</span>
+      </section>
+
+      <!-- EXPANDER BOXES -->
+
+      <section class="expander-boxes">
+        <details>
+          <summary>About</summary>
+          <p>Hi, my name is Stephen and I'm currently studying full-stack web development. In mid 2021, I
+            started
+            to learn
+            programming from the generous online coder community. I quickly fell in love with writing code
+            and,
+            in early 2022,
+            decided to sign up to Coder Academy's Web Dev Bootcamp. I've been a performing and recording
+            musician for most of
+            my life and have worked in many industries from hospitality, to e-commerce and even
+            construction.
+          </p>
+        </details>
+
+        <details>
+          <summary>Projects</summary>
+          <ul>
+            <li><a href="https://smith-sj.github.io/CSS-only-flash-cards/"> CSS Only Flash Cards </a></li>
+            <li><a href="https://smith-sj.github.io/css-zen-garden/"> CSS Zen Garden </a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Contact</summary>
+          <p>Email me at stephen@sjsmith.dev<br> Connect with me on
+            Twitter, LinkedIn and GitHub.
+          </p>
+        </details>
+      </section>
+
+      <!-- RECENT POSTS -->
+
+      <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <a href="./blog.html">Blog Archive</a>
+
+        <!-- CATEGORY FILTERS -->
+        
+
+        <input type="checkbox" id="general" name="blog-category" hidden />
+        <label for="general">
+          General
+        </label>
+        <input type="checkbox" id="news" name="blog-category" hidden />
+        <label for="news">
+          News
+        </label>
+        <input type="checkbox" id="projects" name="blog-category" hidden />
+        <label for="projects">
+          Projects
+        </label>
+        <input type="checkbox" id="tutorials" name="blog-category" hidden />
+        <label for="tutorials">
+          Tutorials
+        </label>
+
+
+        <!-- POST TILES -->
+
+        <div class="blog-tiles">
+          <a href="./blog-posts/post6.html" class="blog-tile tile tutorials">
+            <h4 class="post-title">Checkbox Hack Tutorial</h4>
+            <span class="post-date">29.02.22</span>
+            <span class="post-category">tutorials</span>
+          </a>
+          <a href="./blog-posts/post5.html" class="blog-tile tile projects">
+            <h4 class="post-title">Pure CSS Flash Cards</h4>
+            <span class="post-date">26.02.22</span>
+            <span class="post-category">projects</span>
+          </a>
+          <a href="./blog-posts/post4.html" class="blog-tile tile general">
+            <h4 class="post-title">What Are CSS Blend Modes?</h4>
+            <span class="post-date">24.02.22</span>
+            <span class="post-category">general</span>
+          </a>
+          <a href="./blog-posts/post3.html" class="blog-tile tile projects">
+            <h4 class="post-title">CSS Zen Garden Activity</h4>
+            <span class="post-date">21.02.22</span>
+            <span class="post-category">projects</span>
+          </a>
+          <a href="./blog-posts/post2.html" class="blog-tile tile general">
+            <h4 class="post-title">My Journey to Bootcamp</h4>
+            <span class="post-date">18.02.22</span>
+            <span class="post-category">general</span>
+          </a>
+          <a href="./blog-posts/post1.html" class="blog-tile tile general news">
+            <h4 class="post-title">Web Dev Bootcamp Kicks Off</h4>
+            <span class="post-date">14.02.22</span>
+            <span class="post-category">general, news</span>
+          </a>
+
+          <!-- UNFILTERED COPY -->
+
+          <a href="./blog-posts/post6.html" class="unfiltered">
+            <h4 class="post-title">Checkbox Hack Tutorial</h4>
+            <span class="post-date">29.02.22</span>
+            <span class="post-category">tutorials</span>
+          </a>
+          <a href="./blog-posts/post5.html" class="unfiltered">
+            <h4 class="post-title">Pure CSS Flash Cards</h4>
+            <span class="post-date">26.02.22</span>
+            <span class="post-category">projects</span>
+          </a>
+          <a href="./blog-posts/post4.html" class="unfiltered">
+            <h4 class="post-title">What Are CSS Blend Modes?</h4>
+            <span class="post-date">24.02.22</span>
+            <span class="post-category">general</span>
+          </a>
+          <a href="./blog-posts/post3.html" class="unfiltered">
+            <h4 class="post-title">CSS Zen Garden Activity</h4>
+            <span class="post-date">21.02.22</span>
+            <span class="post-category">projects</span>
+          </a>
+          <a href="./blog-posts/post2.html" class="unfiltered">
+            <h4 class="post-title">My Journey to Bootcamp</h4>
+            <span class="post-date">18.02.22</span>
+            <span class="post-category">general</span>
+          </a>
+          <a href="./blog-posts/post1.html" class="unfiltered">
+            <h4 class="post-title">Web Dev Bootcamp Kicks Off</h4>
+            <span class="post-date">14.02.22</span>
+            <span class="post-category">general, news</span>
+          </a>
+        </div>
+      </section>
     </main>
-    <footer>© Stephen Smith 2022</footer>
-    </div>
-
-
+    <footer>
+      © Stephen Smith 2022
+    </footer>
+  </div>
 </body>
 
 </html>
