@@ -217,6 +217,7 @@ label {
     margin-top: 5px;
 }
 
+
 input:checked + label {
     background:var(--bf-checked-bg-color);
     color: var(--bf-checked-font-color);
@@ -386,7 +387,7 @@ nav span {
   }
   
   .slider:before {
-    background-color: var(--bg-color);
+    background-color: transparent;
     background-image: url(./assets/lightmode.svg);
     background-size: 80%;
     background-position: center;
@@ -406,9 +407,9 @@ nav span {
   }
   
   input:checked + .slider:before {
-    transform: translateX(32px);
+    transform: rotate(-360deg) translateX(32px);
     background-image: url(./assets/darkmode.svg);
-    background-color: var(--highlight-color);
+    background-color: transparent;
   }
 
 
