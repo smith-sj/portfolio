@@ -48,6 +48,7 @@
     transition: 0.5s;
 }
 
+
 body {
     width: 95vw;
     display: block;
@@ -362,6 +363,7 @@ nav span {
     display: flex;
     justify-content: end;
     align-items: center!important;
+    -webkit-tap-highlight-color: transparent;
 }
   .theme-switch {
     height: 26px;
