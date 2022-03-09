@@ -42,12 +42,28 @@
     --collapse-button: url("./assets/darkmodecollapse.svg");
 }
 
+  
+
 /* MAIN LAYOUT */
 
 * {
     transition: 0.5s;
 }
 
+button {
+    background-image: url('./assets/lightmodeexpand.svg');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: url('./assets/darkmodeexpand.svg');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
 
 body {
     width: 95vw;
@@ -58,7 +74,6 @@ body {
     background-color: var(--bg-color);
     overflow-y: scroll;
     overflow-x: hidden;
-    
 }
 
 .wrapper {
@@ -358,12 +373,13 @@ nav span {
 /* MODE TOGGLE */
 
 .theme-switch-wrapper {
-    margin:10px;
-    flex-direction: row;
-    display: flex;
-    justify-content: end;
-    align-items: center!important;
+    margin-top: 15px;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     -webkit-tap-highlight-color: transparent;
+    align-self: start;
 }
   .theme-switch {
     height: 26px;
@@ -390,7 +406,6 @@ nav span {
     display: block;
     background-color: transparent;
     background-image: url(./assets/circle.svg);
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     content: "";
@@ -401,23 +416,19 @@ nav span {
     transition: 0.5s;
   }
 
-  
   input:checked + .slider:before {
-    transform: rotate(-180deg) translateX(-32px);
+    transform: rotate(-180deg) translateX(calc(-62px + 26px));
     background-image: url(./assets/darkmode.svg);
+    padding-left: 15px;
+    box-sizing: border-box;
   }
 
   .lightlb {
-    margin: 5px;
-    font-size: 14px;
-    color: #101010;
+      color:#101010;
   }
   .darklb {
-    margin: 5px;
-    font-size: 14px;
-    color: #EEEEEE;
+      color: #EEEEEE;
   }
-
 
 /* DESKTOP LAYOUT */
 
