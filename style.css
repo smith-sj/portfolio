@@ -417,7 +417,7 @@ nav span {
   }
 
   input:checked + .slider:before {
-    transform: rotate(-180deg) translateX(calc(-62px + 26px));
+    transform: rotate(-180deg) translateX(calc(-62px + 30px));
     background-image: url(./assets/darkmode.svg);
     padding-left: 15px;
     box-sizing: border-box;
