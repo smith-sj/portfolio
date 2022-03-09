@@ -51,9 +51,10 @@
 }
 
 .subheading {
+    margin-top: 20px;
     color: var(--main-font-color);
     display: block;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 button {
@@ -99,7 +100,6 @@ header {
 main {
     display: block;
     width: 80%;
-    margin-top: 10%;
 }
 
 
@@ -118,8 +118,9 @@ h2 {
     color: var(--main-font-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
-    margin-bottom: 0;
+    margin:0;
 }
+
 
 h3 {
     color: var(--main-font-color);
@@ -155,6 +156,12 @@ h2 ~ a {
 header span {
     color: var(--main-font-color);
 }
+.expander-boxes {
+    margin-top: 80px;
+}
+.recent-posts {
+    margin-top: 80px;
+}
 
 /* EXPANDER BOXES */
 
@@ -187,11 +194,17 @@ details summary{
     margin: 0 auto;
     border: 3px solid var(--frame-closed-color);
     box-shadow: -4vw 4vw var(--shadow-closed-color);
+    padding: 0px 20px 0px 10px;
+}
+
+details summary h2 {
+    display: inline-block;
     color: var(--frame-title-color);
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
+    margin: 0;
 }
 
 
@@ -203,9 +216,12 @@ details[open] > summary {
     background-repeat: no-repeat;
     background-color: var(--frame-open-color);
     border: 3px solid var(--frame-open-color);
-    color: var(--frame-title-open);
     background-origin: content-box;
     box-shadow: -4vw 4vw var(--shadow-open-color);
+}
+
+details[open] > summary h2 {
+    color: var(--frame-title-open);
 }
 
 details p, details ul {
@@ -294,6 +310,12 @@ input:checked + label {
     margin-bottom: 5px;
   }
 
+.post-title {
+    color: var(--blog-tile-font-color);
+    font-size: 16px;
+    margin: 0;
+}
+
 
 .post-date {
     font-weight: lighter;
@@ -349,7 +371,7 @@ header a {
 /* FOOTER */
 
 footer {
-    margin: 20px;
+    margin: 60px 0 20px 0;
     text-align: center;
     color: var(--main-font-color);
 }
