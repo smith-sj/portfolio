@@ -372,20 +372,21 @@ nav span {
 
 /* MODE TOGGLE */
 
+
 .theme-switch-wrapper {
-    margin-top: 15px;
+    margin-top: 10px;
     flex-direction: column;
     display:flex;
     justify-content: center;
     align-items: center;
     -webkit-tap-highlight-color: transparent;
-    align-self: start;
 }
   .theme-switch {
     height: 26px;
     width: 62px;
     border: none;
-    margin:0;
+    padding: 0;
+    margin-left: auto;
   }
   
   .theme-switch input {
