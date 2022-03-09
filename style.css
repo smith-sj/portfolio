@@ -152,6 +152,10 @@ h2 ~ a {
     margin-bottom: 20px;
 }
 
+header span {
+    color: var(--main-font-color);
+}
+
 /* EXPANDER BOXES */
 
 /* hide details arrows */
