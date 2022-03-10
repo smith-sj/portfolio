@@ -361,9 +361,8 @@ span.copyright {
     height: auto;
     width: 60px;
     padding: 0;
-    filter: drop-shadow(-2px 2px 2px black);
+    filter: drop-shadow(-2px 2px 2px var(--drop-shadow-color));
     transition: 0.3s;
-    filter: grayscale();
 }
 
 .webdev-logos {
