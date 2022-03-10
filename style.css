@@ -356,20 +356,21 @@ span.copyright {
 }
 
 .webdev-logos img {
-    margin: 10px 0 0 0;
+    margin: 10px 10px 0 0;
     box-sizing: border-box;
     height: auto;
-    width: 50px;
+    width: 60px;
     padding: 0;
     filter: drop-shadow(-2px 2px 2px var(--drop-shadow-color));
     transition: 0.3s;
+    filter: grayscale();
 }
 
 .webdev-logos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .webdev-logos img:hover {
