@@ -163,6 +163,20 @@ header span {
     margin-top: 80px;
 }
 
+.post-header {
+    margin-top: 50px;
+    color: var(--main-font-color);
+}
+
+.post-date{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+article {
+    margin-top: 50px;
+}
+
 /* EXPANDER BOXES */
 
 /* hide details arrows */
@@ -242,6 +256,7 @@ details p, details ul {
     list-style-type:none;
 }
 
+
 /* BLOG */
 
 /* category filters */
@@ -256,7 +271,7 @@ label {
     background-color: transparent;
     font-size: 15px;
     margin-right: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 
@@ -327,6 +342,37 @@ input:checked + label {
     margin-top: auto;
 }
 
+span.copyright {
+    display: block;
+    margin-top: 50px;
+}
+
+
+.skills-heading {
+    display: block;
+    margin-top: 80px;
+}
+
+.webdev-logos img {
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    height: auto;
+    width: 50px;
+    padding: 0;
+}
+
+.webdev-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+
 .tile {
     display: none;
 }
@@ -368,6 +414,10 @@ header a {
     column-gap: 5px;
 }
 
+.blog-container {
+    margin-top: 50px;
+}
+
 /* FOOTER */
 
 footer {
@@ -402,28 +452,36 @@ nav span {
 }
 
 
-/* MODE TOGGLE */
+/* THEME TOGGLE */
 
-
-.theme-switch-wrapper {
-    margin-top: 10px;
-    flex-direction: column;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-tap-highlight-color: transparent;
+.theme-switch input {
+    position: absolute;
+    margin: 0;
+    width: 62px;
+    height: 26px;
+    border-radius: 34px;
+    opacity: 0;
 }
+
+.theme-switch input:focus + div {
+    outline: 1px solid var(--frame-closed-color);
+}
+
+.theme-switch input:focus:not(:focus-visible) + div {
+    outline: none;
+}
+
   .theme-switch {
+    display: block;
     height: 26px;
     width: 62px;
     border: none;
     padding: 0;
+    margin-top: 10px;
+    margin-right: 0px;
     margin-left: auto;
   }
   
-  .theme-switch input {
-    display:none;
-  }
   
   .slider {
     background-color: var(--shadow-closed-color);
