@@ -15,6 +15,7 @@
     --bf-checked-bg-color: yellow;
     --bf-checked-border-color:#272727;
     --bf-checked-font-color: #272727;
+    --drop-shadow-color: #272727;
     /* assets */
     --expand-button: url("./assets/lightmodeexpand.svg");
     --collapse-button: url("./assets/lightmodecollapse.svg");
@@ -37,6 +38,7 @@
     --bf-checked-bg-color: yellow;
     --bf-checked-border-color: yellow;
     --bf-checked-font-color: #101010;
+    --drop-shadow-color: #000000;
     /* assets */
     --expand-button: url("./assets/darkmodeexpand.svg");
     --collapse-button: url("./assets/darkmodecollapse.svg");
@@ -359,7 +361,7 @@ span.copyright {
     height: auto;
     width: 50px;
     padding: 0;
-    filter: drop-shadow(-2px 2px 2px var(--shadow-closed-color));
+    filter: drop-shadow(-2px 2px 2px var(--drop-shadow-color));
     transition: 0.3s;
 }
 
@@ -368,14 +370,11 @@ span.copyright {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
 }
 
 .webdev-logos img:hover {
     transform: translateY(-5px);
-    filter: drop-shadow(-2px 7px 2px var(--shadow-closed-color))
+    filter: drop-shadow(-2px 7px 2px var(--drop-shadow-color))
 }
 
 
