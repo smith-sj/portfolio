@@ -529,12 +529,6 @@ nav span {
     box-sizing: border-box;
   }
 
-  .lightlb {
-      color:#101010;
-  }
-  .darklb {
-      color: #EEEEEE;
-  }
 
 /* DESKTOP LAYOUT */
 
@@ -557,6 +551,8 @@ nav span {
     h1 {
         font-size: 100px;
     }
+
+    
 
     .wrapper {
         width: 600px;

@@ -1,0 +1,257 @@
+/*--------------------------------*/
+/*--------GLOBAL-PROPERTIES-------*/
+/*--------------------------------*/
+:root {
+    /* colors */
+    --bg-color: #EEEEEE;
+    --highlight-color: yellow;
+    --frame-closed-color: #272727;
+    --frame-open-color:#272727;
+    --shadow-closed-color: #BEBEBE;
+    --shadow-open-color: yellow;
+    --main-font-color: #272727;
+    --frame-title-color: #BEBEBE;
+    --frame-title-open: yellow;
+    --blog-tile-font-color:#272727;
+    --blog-tile-bg-color:#BEBEBE;
+    --blog-filter-color: #272727;
+    --bf-checked-bg-color: yellow;
+    --bf-checked-border-color:#272727;
+    --bf-checked-font-color: #272727;
+    --drop-shadow-color: #272727;
+    /* assets */
+    --expand-button: url("./assets/lightmodeexpand.svg");
+    --collapse-button: url("./assets/lightmodecollapse.svg");
+    /* fonts */
+    --ff-display: 'Montserrat', sans-serif;
+    --ff-text: 'Ubuntu Mono', monospace;
+    /* font sizes */
+    --fs-large: clamp(1.9rem, 2.7vw + 1rem, 2.7rem);
+    --fs-800: 3rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: 0.75rem;
+    --fs-200: 0.5rem;
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+    /* colors */
+    --bg-color: #101010;
+    --highlight-color: yellow;
+    --frame-closed-color: #D3D3D3;
+    --frame-open-color:yellow;
+    --shadow-closed-color: #303030;
+    --shadow-open-color: #303030;
+    --main-font-color: #D3D3D3;
+    --frame-title-color: #303030;
+    --frame-title-open: #303030;
+    --blog-tile-font-color:#101010;
+    --blog-tile-bg-color:#D3D3D3;
+    --blog-filter-color: #D3D3D3;
+    --bf-checked-bg-color: yellow;
+    --bf-checked-border-color: yellow;
+    --bf-checked-font-color: #101010;
+    --drop-shadow-color: #000000;
+    /* assets */
+    --expand-button: url("./assets/darkmodeexpand.svg");
+    --collapse-button: url("./assets/darkmodecollapse.svg");
+}
+
+/*--------------------------------*/
+/*-----------MAIN-LAYOUT----------*/
+/*--------------------------------*/
+
+body {
+    background-color: var(--bg-color);
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll; /*note: force scrollbar, so page doesn't grow or shrink*/
+    width: 95vw;
+}
+.page-container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* HEADER */
+.main-header {
+    color: var(--main-font-color);
+    font-family: var(--ff-display);
+    font-size: var(--fs-large);
+    margin: 0.75em 0 2em 0;
+}
+.main-header__heading {
+    margin: 0;
+}
+.main-header__subheading {
+    font-size: 1em;
+    font-family: var(--ff-text);
+}
+
+/*--------------------------------*/
+/*-----------COMPONENTS-----------*/
+/*--------------------------------*/
+
+/* THEME TOGGLE */
+
+/* The toggle's container */
+.theme-toggle {
+    display: block;
+    height: 26px;
+    margin: clamp(10px, 2vw, 50px) 0 0 auto;
+    width: 62px;
+}
+/* The toggle's background */
+.theme-toggle__slider {
+    background-color: var(--shadow-closed-color);
+    height: 100%;
+    width: 100%;
+    transition: .4s;
+    border-radius: 34px;
+}
+/*The 'sun' switch*/
+.theme-toggle__slider:before {
+    display: block;
+    background-image: url(./assets/circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    height: 26px;
+    width: 26px;
+    transition: 0.5s;
+}
+/*The 'moon' switch */
+input:checked + .theme-toggle__slider:before {
+    cursor: pointer;
+    transform: rotate(-180deg) translateX(calc(-62px + 28px));
+    background-image: url(./assets/darkmode.svg);
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+/* This checkbox is hidden from sight but is shaped 
+so that, when in focus, it matches the slider. This way,
+it is accessible by the tab key.*/
+.theme-toggle input {
+    cursor: pointer;
+    border-radius: 34px;
+    height: 26px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 62px;
+}
+/* The outline appears for keyboard users
+but not for mouse users. */
+.theme-toggle input:focus + div {
+    outline: 1px solid var(--frame-closed-color);
+}
+.theme-toggle input:focus:not(:focus-visible) + div {
+    outline: none;
+}
+/*--------------------------------------------*/
+
+/* ACCORDIANS */
+
+details summary::-webkit-details-marker {
+    display: none; /* hides arrow */
+}
+.accordian {
+    display: block;
+    margin-bottom: 35px;
+}
+.accordian__heading {
+    background: var(--expand-button);
+    background-color: var(--frame-closed-color);
+    background-origin: content-box;
+    background-position:right;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border: 3px solid var(--frame-closed-color);
+    box-shadow: -17px 17px var(--shadow-closed-color);
+    color: var(--frame-title-color);
+    cursor: pointer;
+    font-family: var(--ff-text);
+    font-size: var(--fs-300);
+    list-style: none;
+    padding: 0 17px 0 17px;
+}
+.accordian[open] .accordian__heading {
+    background: var(--collapse-button);
+    background-color: var(--frame-open-color);
+    background-origin: content-box;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: 3px solid var(--frame-open-color);
+    box-shadow: -17px 17px var(--shadow-open-color);
+    color: var(--frame-title-open);
+}
+.accordian__content {
+    background: linear-gradient(to bottom, var(--shadow-open-color) 0%, var(--shadow-open-color) 100%) no-repeat;
+    /* background: yellow; */
+    background-size: calc(100% - 17px + 3px);
+    border: 3px solid var(--frame-open-color);
+    border-top: none;
+    box-shadow: -17px 17px var(--shadow-open-color);
+    box-sizing: border-box;
+    color: var(--main-font-color);
+    font-family: var(--ff-text);
+    font-size: var(--fs-400);
+    list-style-type:none;
+    margin: 0 auto;
+    padding: 10px 20px 10px 10px;
+    text-align: left;
+}
+
+.accordian a {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+/*--------------------------------------------*/
+/* SKILLS */
+
+.skills{
+    color:var(--main-font-color);
+    font-size: var(--fs-500);
+    margin-top: 80px;
+}
+
+.skills__heading {
+    font-family: var(--ff-display);
+    font-size: var(--fs-800);
+}
+
+.skills__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__icons img {
+    height: auto;
+    width: 15%;
+    margin: 2%;
+    padding: 0px;
+    filter: drop-shadow(-2px 2px 2px var(--drop-shadow-color));
+    transition: 0.3s;
+}
+
+.skills__icons img:nth-child(1), .webdev-logos img:nth-child(6) {
+    margin-left: 0px;
+}
+
+.skills__icons img:nth-child(5), .webdev-logos img:nth-child(10) {
+    margin-right: 0px;
+}
+
+.skills__icons img:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(-2px 7px 2px var(--drop-shadow-color))
+}

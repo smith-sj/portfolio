@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style-copy.css">
+  <title>Stephen Smith Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- THEME SWITCH -->
+  <label class="theme-toggle" for="checkbox">
+    <input type="checkbox" id="checkbox" tabindex="1" />
+    <div class="theme-toggle__slider"></div>
+  </label>
+  <script src="./mode-switch.js"></script>
+  <div class="page-container">
+    <!-- HEADER -->
+    <header class="main-header">
+      <h1 class="main-header__heading">Stephen Smith</h1>
+      <span class="main-header__subheading">Full-stack Web Developer</span>
+    </header>
+    <main>
+      <!-- ACCORDIANS -->
+      <section class="accordians">
+        <details class="accordian">
+          <summary class="accordian__heading">
+            <h2>About</h2>
+          </summary>
+          <p class="accordian__content">
+            Hi, my name is Stephen and I'm currently studying full-stack web development. In mid 2021, I
+            started to learn programming from the generous online coder community. I quickly fell in
+            love with writing code and, in early 2022, decided to sign up to Coder Academy's Web Dev
+            Bootcamp. I've been a performing and recording musician for most of my life and have worked
+            in many industries from hospitality, to e-commerce and even construction.
+          </p>
+        </details>
+        <details class="accordian">
+          <summary class="accordian__heading">
+            <h2>Projects</h2>
+          </summary>
+          <ul class="accordian__content">
+            <li><a href="https://smith-sj.github.io/CSS-only-flash-cards/"> CSS Only Flash Cards </a></li>
+            <li><a href="https://smith-sj.github.io/css-zen-garden/"> CSS Zen Garden </a></li>
+          </ul>
+        </details>
+        <details class="accordian">
+          <summary class="accordian__heading">
+            <h2>Contact</h2>
+          </summary>
+          <p class="accordian__content">
+            Email me at stephen@sjsmith.dev
+          </p>
+        </details>
+      </section>
+      <!-- SKILLS -->
+      <section class="skills">
+        <h2 class="skills__heading">Skills</h2>
+        <p class="skills__paragraph">
+          These are some of the skills I've collected so far on my programming journey, as well as a
+          few I'll be learning later in my web development bootcamp.
+        </p>
+        <div class="skills__icons">
+          <img src="./assets/logos/html5-logo.svg" alt="HTML5 logo" />
+          <img src="./assets/logos/css3-logo.svg" alt="CSS3 logo" />
+          <img src="./assets/logos/ruby-logo.svg" alt="Ruby logo" />
+          <img src="./assets/logos/javascript-logo.svg" alt="JavaScript logo" />
+          <img src="./assets/logos/python-logo.svg" alt="Python logo" />
+          <img src="./assets/logos/flutter-logo.svg" alt="Flutter logo" />
+          <img src="./assets/logos/git-logo.svg" alt="Git logo" />
+          <img src="./assets/logos/bash-logo.svg" alt="Bash logo" />
+          <img src="./assets/logos/rails-logo.svg" alt="Ruby On Rails logo" />
+          <img src="./assets/logos/react-logo.svg" alt="React logo" />
+        </div>
+      </section>
+
+      <!-- RECENT POSTS -->
+
+      <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <a href="./blog.html">Blog Archive</a>
+
+        <!-- POST TILES -->
+
+        <div class="blog-tiles">
+
+          <a href="./blog-posts/post6.html" class="unfiltered">
+            <h3 class="post-title">Checkbox Hack Tutorial</h3>
+            <span class="post-date">29.02.22</span>
+            <span class="post-category">tutorials</span>
+          </a>
+          <a href="./blog-posts/post5.html" class="unfiltered">
+            <h3 class="post-title">Pure CSS Flash Cards</h3>
+            <span class="post-date">26.02.22</span>
+            <span class="post-category">projects</span>
+          </a>
+          <a href="./blog-posts/post4.html" class="unfiltered">
+            <h3 class="post-title">What Are CSS Blend Modes?</h3>
+            <span class="post-date">24.02.22</span>
+            <span class="post-category">general</span>
+          </a>
+          <a href="./blog-posts/post3.html" class="unfiltered">
+            <h3 class="post-title">CSS Zen Garden Activity</h3>
+            <span class="post-date">21.02.22</span>
+            <span class="post-category">projects</span>
+          </a>
+          <a href="./blog-posts/post2.html" class="unfiltered">
+            <h3 class="post-title">My Journey to Bootcamp</h3>
+            <span class="post-date">18.02.22</span>
+            <span class="post-category">general</span>
+          </a>
+          <a href="./blog-posts/post1.html" class="unfiltered">
+            <h3 class="post-title">Web Dev Bootcamp Kicks Off</h3>
+            <span class="post-date">14.02.22</span>
+            <span class="post-category">general, news</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © Stephen Smith 2022
+    </footer>
+  </div>
+</body>
+
+</html>
