@@ -78,6 +78,15 @@ body {
     max-width: 400px;
 }
 
+h1 {
+    margin:0;
+}
+
+h2 {
+    margin:0;
+}
+
+
 /* HEADER */
 .main-header {
     color: var(--main-font-color);
@@ -178,7 +187,7 @@ details summary::-webkit-details-marker {
     font-family: var(--ff-text);
     font-size: var(--fs-300);
     list-style: none;
-    padding: 0 17px 0 17px;
+    padding: 17px;
 }
 .accordian[open] .accordian__heading {
     background: var(--collapse-button);
@@ -217,41 +226,42 @@ details summary::-webkit-details-marker {
 /* SKILLS */
 
 .skills{
+    padding: 30px;
+    box-shadow: -17px 17px var(--shadow-closed-color);
+    background: linear-gradient(to bottom, var(--shadow-closed-color) 0%, var(--shadow-closed-color) 100%) no-repeat;
+    background-position: calc(100% - 17px + 2px) 15px;
+    border: 2px solid var(--frame-closed-color);
     color:var(--main-font-color);
-    font-size: var(--fs-500);
+    font-family: var(--ff-text);
+    font-size: var(--fs-400);
     margin-top: 80px;
 }
-
 .skills__heading {
     font-family: var(--ff-display);
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
 }
-
 .skills__icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .skills__icons img {
+    filter: drop-shadow(-2px 2px 2px var(--drop-shadow-color));
     height: auto;
-    width: 15%;
     margin: 2%;
     padding: 0px;
-    filter: drop-shadow(-2px 2px 2px var(--drop-shadow-color));
     transition: 0.3s;
+    width: 15%;
 }
-
 .skills__icons img:nth-child(1), .webdev-logos img:nth-child(6) {
     margin-left: 0px;
 }
-
 .skills__icons img:nth-child(5), .webdev-logos img:nth-child(10) {
     margin-right: 0px;
 }
-
 .skills__icons img:hover {
     transform: translateY(-5px);
     filter: drop-shadow(-2px 7px 2px var(--drop-shadow-color))
 }
+
