@@ -71,6 +71,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll; /*note: force scrollbar, so page doesn't grow or shrink*/
     width: 95vw;
+    transition: 0.5s;
 }
 .page-container {
     margin: 0 auto;
@@ -265,3 +266,54 @@ details summary::-webkit-details-marker {
     filter: drop-shadow(-2px 7px 2px var(--drop-shadow-color))
 }
 
+/*--------------------------------------------*/
+/* RECENT POSTS */
+
+.recent-posts {
+    margin-top: 80px;
+}
+
+.tile {
+    display: none;
+}
+
+.unfiltered {
+    height: 110px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blog-tile-bg-color);
+    padding: 10px;
+    flex: 40%;
+    margin-bottom: 5px;
+}
+
+.tile:hover {
+    background-color: var(--highlight-color);
+}
+
+.unfiltered:hover {
+    background-color: var(--highlight-color);
+}
+
+input:checked ~ .blog-tiles .unfiltered {
+    display: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.blog-tiles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+    flex-wrap: wrap;
+    align-content:space-between;
+    column-gap: 5px;
+}
+
+.blog-container {
+    margin-top: 50px;
+}
