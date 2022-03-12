@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style-copy.css">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,133 +14,131 @@
 </head>
 
 <body>
-  <div class="theme-switch-wrapper">
-    <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
+  <label class="theme-toggle" for="checkbox">
+    <input type="checkbox" id="checkbox" tabindex="1" />
+    <div class="theme-toggle__slider"></div>
   </label>
   <script src="./mode-switch.js"></script>
-</div>
-  <div class="wrapper">
-    <header>
+  <div class="page-container">
+    <header class="main-header">
       <a href="./index.html">
-        <h1>Stephen Smith</h1>
+        <h1 class="main-header__heading">Stephen Smith</h1>
       </a>
     </header>
     <main>
-      <div class="blog-container">
+      <section class="post-archive">
         <h2> Blog Archive</h2>
 
         <!-- CATEGORY FILTERS -->
         <input type="checkbox" id="general" name="blog-category" hidden />
-        <label for="general">
+        <label for="general" class="category-filter">
           General
         </label>
         <input type="checkbox" id="news" name="blog-category" hidden />
-        <label for="news">
+        <label for="news" class="category-filter">
           News
         </label>
         <input type="checkbox" id="projects" name="blog-category" hidden />
-        <label for="projects">
+        <label for="projects" class="category-filter">
           Projects
         </label>
         <input type="checkbox" id="tutorials" name="blog-category" hidden />
-        <label for="tutorials">
+        <label for="tutorials" class="category-filter">
           Tutorials
         </label>
 
-        <!-- BLOG TILES -->
+        <!-- FILTERED POST TILES -->
 
-        <div class="blog-tiles">
-          <a href="./blog-posts/post9.html" class="blog-tile tile news">
-            <h4 class="post-title">My Portfolio Launch</h4>
+        <div class="post-container">
+          <a href="./blog-posts/post9.html" class="post-container__tile--filtered news">
+            <h3 class="post-title">My Portfolio Launch</h3>
             <span class="post-date">10.03.22</span>
             <span class="post-category">news</span>
           </a>
-          <a href="./blog-posts/post8.html" class="blog-tile tile tutorials">
-            <h4 class="post-title">CSS Only Content Filter</h4>
+          <a href="./blog-posts/post8.html" class="post-container__tile--filtered tutorials">
+            <h4 class="post-title">CSS Only Content Filter</h3>
             <span class="post-date">07.03.22</span>
             <span class="post-category">tutorials</span>
           </a>
-          <a href="./blog-posts/post7.html" class="blog-tile tile tutorials">
-            <h4 class="post-title">Stylish HTML Expandable Boxes</h4>
+          <a href="./blog-posts/post7.html" class="post-container__tile--filtered tutorials">
+            <h3 class="post-title">Stylish HTML Expandable Boxes</h3>
             <span class="post-date">01.03.22</span>
             <span class="post-category">tutorials</span>
           </a>
-          <a href="./blog-posts/post6.html" class="blog-tile tile tutorials">
-            <h4 class="post-title">Checkbox Hack Tutorial</h4>
+          <a href="./blog-posts/post6.html" class="post-container__tile--filtered tutorials">
+            <h3 class="post-title">Checkbox Hack Tutorial</h3>
             <span class="post-date">29.02.22</span>
             <span class="post-category">tutorials</span>
           </a>
-          <a href="./blog-posts/post5.html" class="blog-tile tile projects">
-            <h4 class="post-title">Pure CSS Flash Cards</h4>
+          <a href="./blog-posts/post5.html" class="post-container__tile--filtered projects">
+            <h3 class="post-title">Pure CSS Flash Cards</h3>
             <span class="post-date">26.02.22</span>
             <span class="post-category">projects</span>
           </a>
-          <a href="./blog-posts/post4.html" class="blog-tile tile general">
-            <h4 class="post-title">What Are CSS Blend Modes?</h4>
+          <a href="./blog-posts/post4.html" class="post-container__tile--filtered general">
+            <h3 class="post-title">What Are CSS Blend Modes?</h3>
             <span class="post-date">24.02.22</span>
             <span class="post-category">general</span>
           </a>
-          <a href="./blog-posts/post3.html" class="blog-tile tile projects">
-            <h4 class="post-title">CSS Zen Garden Activity</h4>
+          <a href="./blog-posts/post3.html" class="post-container__tile--filtered projects">
+            <h3 class="post-title">CSS Zen Garden Activity</h3>
             <span class="post-date">21.02.22</span>
             <span class="post-category">projects</span>
           </a>
-          <a href="./blog-posts/post2.html" class="blog-tile tile general">
-            <h4 class="post-title">My Journey to Bootcamp</h4>
+          <a href="./blog-posts/post2.html" class="post-container__tile--filtered general">
+            <h3 class="post-title">My Journey to Bootcamp</h3>
             <span class="post-date">18.02.22</span>
             <span class="post-category">general</span>
           </a>
-          <a href="./blog-posts/post1.html" class="blog-tile tile general news">
-            <h4 class="post-title">Web Dev Bootcamp Kicks Off</h4>
+          <a href="./blog-posts/post1.html" class="post-container__tile--filtered general news">
+            <h3 class="post-title">Web Dev Bootcamp Kicks Off</h3>
             <span class="post-date">14.02.22</span>
             <span class="post-category">general, news</span>
           </a>
 
-          <!-- UNFILTERED COPY -->
-          <a href="./blog-posts/post9.html" class="unfiltered">
-            <h4 class="post-title">My Portfolio Launch</h4>
+          <!-- POST TILES -->
+          <a href="./blog-posts/post9.html" class="post-container__tile">
+            <h3 class="post-title">My Portfolio Launch</h3>
             <span class="post-date">10.03.22</span>
             <span class="post-category">news</span>
           </a>
-          <a href="./blog-posts/post8.html" class="unfiltered">
-            <h4 class="post-title">CSS Only Content Filter</h4>
+          <a href="./blog-posts/post8.html" class="post-container__tile">
+            <h3 class="post-title">CSS Only Content Filter</h3>
             <span class="post-date">07.03.22</span>
             <span class="post-category">tutorials</span>
           </a>
-          <a href="./blog-posts/post7.html" class="unfiltered">
-            <h4 class="post-title">Stylish HTML Expandable Boxes</h4>
+          <a href="./blog-posts/post7.html" class="post-container__tile">
+            <h3 class="post-title">Stylish HTML Expandable Boxes</h3>
             <span class="post-date">01.03.22</span>
             <span class="post-category">tutorials</span>
           </a>
-          <a href="./blog-posts/post6.html" class="unfiltered">
-            <h4 class="post-title">Checkbox Hack Tutorial</h4>
+          <a href="./blog-posts/post6.html" class="post-container__tile">
+            <h3 class="post-title">Checkbox Hack Tutorial</h3>
             <span class="post-date">29.02.22</span>
             <span class="post-category">tutorials</span>
           </a>
-          <a href="./blog-posts/post5.html" class="unfiltered">
-            <h4 class="post-title">Pure CSS Flash Cards</h4>
+          <a href="./blog-posts/post5.html" class="post-container__tile">
+            <h3 class="post-title">Pure CSS Flash Cards</h3>
             <span class="post-date">26.02.22</span>
             <span class="post-category">projects</span>
           </a>
-          <a href="./blog-posts/post4.html" class="unfiltered">
-            <h4 class="post-title">What Are CSS Blend Modes?</h4>
+          <a href="./blog-posts/post4.html" class="post-container__tile">
+            <h3 class="post-title">What Are CSS Blend Modes?</h3>
             <span class="post-date">24.02.22</span>
             <span class="post-category">general</span>
           </a>
-          <a href="./blog-posts/post3.html" class="unfiltered">
-            <h4 class="post-title">CSS Zen Garden Activity</h4>
+          <a href="./blog-posts/post3.html" class="post-container__tile">
+            <h3 class="post-title">CSS Zen Garden Activity</h3>
             <span class="post-date">21.02.22</span>
             <span class="post-category">projects</span>
           </a>
-          <a href="./blog-posts/post2.html" class="unfiltered">
-            <h4 class="post-title">My Journey to Bootcamp</h4>
+          <a href="./blog-posts/post2.html" class="post-container__tile">
+            <h3 class="post-title">My Journey to Bootcamp</h3>
             <span class="post-date">18.02.22</span>
             <span class="post-category">general</span>
           </a>
-          <a href="./blog-posts/post1.html" class="unfiltered">
-            <h4 class="post-title">Web Dev Bootcamp Kicks Off</h4>
+          <a href="./blog-posts/post1.html" class="post-container__tile">
+            <h3 class="post-title">Web Dev Bootcamp Kicks Off</h3>
             <span class="post-date">14.02.22</span>
             <span class="post-category">general, news</span>
           </a>
