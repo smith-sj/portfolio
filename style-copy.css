@@ -86,7 +86,9 @@ h1 {
 h2 {
     margin:0;
 }
-
+h3 {
+    margin: 0;
+}
 
 /* HEADER */
 .main-header {
@@ -106,6 +108,24 @@ h2 {
 /*--------------------------------*/
 /*-----------COMPONENTS-----------*/
 /*--------------------------------*/
+
+/* BUTTON */
+
+.button {
+    border-radius: 0.7em;
+    border: 2px solid var(--main-font-color);
+    color: var(--main-font-color);
+    font-family: var(--ff-text);
+    font-size: var(--fs-400);
+    font-weight: 400;
+    padding: 0.4em;
+    text-decoration: none;
+}
+.button:hover {
+    background:var(--bf-checked-bg-color);
+    color: var(--bf-checked-font-color);
+    border: 2px solid var(--bf-checked-border-color);
+}
 
 /* THEME TOGGLE */
 
@@ -230,16 +250,12 @@ details summary::-webkit-details-marker {
     padding: 30px;
     box-shadow: -17px 17px var(--shadow-closed-color);
     background: linear-gradient(to bottom, var(--shadow-closed-color) 0%, var(--shadow-closed-color) 100%) no-repeat;
-    background-position: calc(100% - 17px + 2px) 15px;
-    border: 2px solid var(--frame-closed-color);
+    background-position: calc(100% - 17px + 3px) 14px;
+    border: 3px solid var(--frame-closed-color);
     color:var(--main-font-color);
     font-family: var(--ff-text);
     font-size: var(--fs-400);
     margin-top: 80px;
-}
-.skills__heading {
-    font-family: var(--ff-display);
-    font-size: var(--fs-700);
 }
 .skills__icons {
     display: flex;
@@ -271,49 +287,53 @@ details summary::-webkit-details-marker {
 
 .recent-posts {
     margin-top: 80px;
+    color: var(--main-font-color);
+    font-family: var(--ff-display);
+    font-size: var(--fs-600);
 }
-
-.tile {
-    display: none;
+.post-container {
+    align-content:space-between;
+    column-count: 2;
+    column-gap: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-
-.unfiltered {
-    height: 110px;
+/* POST TILES */
+.post-container__tile {
+    background-color: var(--blog-tile-bg-color);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background-color: var(--blog-tile-bg-color);
-    padding: 10px;
     flex: 40%;
+    font-family: var(--ff-text);
+    height: 110px;
     margin-bottom: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--blog-tile-font-color);
+    font-size: var(--fs-400);
 }
-
-.tile:hover {
+.post-container__tile:hover {
     background-color: var(--highlight-color);
 }
-
-.unfiltered:hover {
-    background-color: var(--highlight-color);
-}
-
-input:checked ~ .blog-tiles .unfiltered {
+/* All post tiles that occur after any checked input 
+will be hidden and replaced with filtered tiles*/
+input:checked ~ .post-container .post-container__tile {
     display: none;
 }
 
+/*Filtered Post Tiles*/
+.tile {
+    display: none;
+}
+.tile:hover {
+    background-color: var(--highlight-color);
+}
 header a {
     text-decoration: none;
 }
-
-.blog-tiles {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    column-count: 2;
-    flex-wrap: wrap;
-    align-content:space-between;
-    column-gap: 5px;
-}
-
 .blog-container {
     margin-top: 50px;
 }
