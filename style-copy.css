@@ -93,17 +93,27 @@ h3 {
 
 /* HEADER */
 .main-header {
-    color: var(--main-font-color);
     font-family: var(--ff-display);
     font-size: var(--fs-large);
     margin: 0.75em 0 2em 0;
 }
 .main-header__heading {
+    color: var(--main-font-color);
     margin: 0;
+    text-decoration: none;
 }
 .main-header__subheading {
     font-size: 1em;
     font-family: var(--ff-text);
+    color: var(--main-font-color)
+}
+
+/* SECTION HEAADING */
+.section-heading {
+    color: var(--main-font-color);
+    font-family: var(--ff-display);
+    font-size: var(--fs-700);
+    margin-bottom: 20px;
 }
 
 /*--------------------------------*/
@@ -127,6 +137,7 @@ h3 {
     color: var(--bf-checked-font-color);
     border: 2px solid var(--bf-checked-border-color);
 }
+
 
 /* THEME TOGGLE */
 
@@ -294,17 +305,12 @@ details summary::-webkit-details-marker {
 }
 
 /*--------------------------------------------*/
-/* RECENT POSTS */
+/* POSTS */
 
 .recent-posts {
     margin-top: 80px;
 }
-.recent-posts__heading {
-    color: var(--main-font-color);
-    font-family: var(--ff-display);
-    font-size: var(--fs-700);
-    margin-bottom: 20px;
-}
+
 .post-container {
     align-content:space-between;
     column-count: 2;
@@ -338,7 +344,9 @@ will be hidden and replaced with filtered tiles*/
 input:checked ~ .post-container .post-container__tile {
     display: none;
 }
+
 /*Filtered Post Tiles*/
+
 .post-container__tile--filtered {
     background-color: var(--blog-tile-bg-color);
     color: var(--blog-tile-font-color);
@@ -367,17 +375,17 @@ header a {
 
 /* category filters */
 
-
 .category-filter {
+    border-radius: 0.7em;
+    border: 2px solid var(--main-font-color);
+    color: var(--main-font-color);
     display: inline-block;
-    border: 2px solid var(--blog-filter-color);
-    color: var(--blog-filter-color);
-    padding: 5px;
-    border-radius: 12px;
-    background-color: transparent;
-    font-size: 15px;
-    margin-right: 5px;
-    margin-top: 10px;
+    font-family: var(--ff-text);
+    font-size: var(--fs-400);
+    font-weight: 400;
+    margin: 0.5em 0.5em 0 0;
+    padding: 0.4em;
+    text-decoration: none;
 }
 input:checked + .category-filter {
     background:var(--bf-checked-bg-color);
@@ -396,9 +404,6 @@ input:checked + .category-filter {
 #tutorials:checked ~ .post-container .tutorials {
     display: flex;
   }
-
-
-
 
 
 /* FOOTER */
