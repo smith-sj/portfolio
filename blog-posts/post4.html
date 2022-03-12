@@ -2,105 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen Smith Blog Post #4</title>
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+    Stephen Smith Blog Post #4
+  </title>
+  <link href="../style-copy.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&amp;display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider"></div>
-        </label>
-        <script src="../mode-switch.js"></script>
-    </div>
-    <div class="wrapper">
-        <header>
-            <a href="../index.html">
-                <h1>Stephen Smith</h1>
-            </a>
+  <!-- THEME SWITCH -->
+  <label class="theme-toggle" for="checkbox">
+    <input type="checkbox" id="checkbox" tabindex="1" />
+    <div class="theme-toggle__slider"></div>
+  </label>
+  <script src="../mode-switch.js"></script>
+  <div class="page-container">
+    <!-- HEADER -->
+    <header class="main-header">
+      <a href="../index.html">
+        <h1 class="main-header__heading">Stephen Smith</h1>
+      </a>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <section class="post">
+        <header class="post__header">
+          <h2 class="section-heading">What Are CSS Blend Modes?</h2>
+          <span class="post-header__date">24.02.2022</span>
         </header>
-        <main>
-            <section class="post-header">
-                <h2>What Are CSS Blend Modes?</h2>
-                <span class="post-date">24.02.2022</span>
-            </section>
-            <article>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales elit vitae diam molestie
-                    tempor. Ut luctus condimentum est aliquam malesuada. Ut imperdiet suscipit scelerisque. Donec
-                    tincidunt, arcu nec maximus euismod, turpis dui pretium lacus,
-                    vel egestas ante lorem sit amet dui. Aenean at efficitur ante. Duis at mauris ut nisl euismod
-                    ornare. Etiam porttitor tincidunt justo, sed ultrices lectus hendrerit id. Cras ac mauris id nibh
-                    blandit blandit vulputate a nisi. Duis blandit cursus urna, at varius erat sollicitudin at. Nulla
-                    facilisi.
-                </p>
-                <p>
-                    Nam diam est, commodo eu maximus sed, feugiat quis sapien. Morbi et lobortis neque, in placerat
-                    nulla. Vestibulum purus mi, eleifend in vestibulum in, eleifend a sem. Sed pellentesque consectetur
-                    diam, a elementum arcu pharetra et. Sed elementum libero magna,
-                    scelerisque sodales urna luctus vel. Phasellus et est ut ante accumsan maximus et id augue.
-                    Pellentesque efficitur sem at eros pretium maximus. Ut vel nisi non nisi rhoncus dignissim. Proin
-                    facilisis elit urna, et mollis turpis facilisis facilisis.
-                </p>
-                <p>
-                    Suspendisse cursus rhoncus dolor id commodo. Nulla lacinia ultricies ornare. In vel pharetra nisi.
-                    Aliquam bibendum non orci id rutrum. Aenean dolor tellus, suscipit ac turpis nec, scelerisque
-                    placerat ipsum. Proin id ante euismod, scelerisque mauris vel, iaculis augue. Sed eget tellus
-                    tortor.
-                    Cras bibendum luctus sapien eu dignissim. Duis nec magna quis risus ornare suscipit. Duis id est
-                    sodales, mollis nulla nec, fermentum nulla. Nam egestas, dui sit amet pretium ultricies, nisi nibh
-                    pretium nisl, et vehicula turpis quam quis mi. Nunc sed condimentum ante, vitae congue arcu.
-                    Maecenas vel magna ex. Morbi sit amet orci est.
-                </p>
-                <p>
-                    Quisque consectetur, odio vitae dapibus mattis, dui ante vehicula lorem, ut ullamcorper nisl nulla
-                    scelerisque augue. Curabitur ultrices, urna in dignissim consectetur, nunc nulla ornare massa, quis
-                    fringilla nisi lectus nec sem. Ut porttitor purus dolor, volutpat imperdiet ante ultricies nec.
-                    Integer at malesuada urna.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Quisque nec urna orci. Praesent a fermentum eros, a suscipit eros. Suspendisse et ornare enim.
-                    Suspendisse non sem id urna feugiat dignissim. Vestibulum in risus eu dolor molestie vulputate vitae
-                    nec erat. Proin tellus dolor, viverra quis
-                    consectetur non, lacinia non sapien. Orci varius natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. Curabitur lobortis porttitor lorem, vel semper turpis facilisis sit amet.
-                    Praesent malesuada tempus vehicula. Nullam nec quam id magna fringilla convallis mattis nec dui.
-                    Nulla libero est, condimentum in lacus ac, accumsan commodo felis.
-                </p>
-                <p>
-                    Donec sit amet condimentum odio. Integer rhoncus est viverra quam venenatis eleifend. Quisque vel
-                    tempor sapien, id mattis eros. Morbi quis iaculis nulla, et tristique sapien. Sed semper egestas
-                    sapien varius congue. Mauris semper vulputate ante id bibendum. In imperdiet convallis ex, nec
-                    tincidunt eros ultricies vel. Nunc aliquam semper elit sed facilisis.
-                    Nam ut luctus ex. Nam volutpat elit suscipit leo tincidunt vulputate. Suspendisse congue urna quis
-                    ligula semper, in imperdiet diam sollicitudin. Curabitur pharetra maximus enim. Cras eu pharetra
-                    risus. Suspendisse sollicitudin non mauris quis tristique. Integer ante ex, cursus eget lorem at,
-                    faucibus commodo neque.
-                </p>
-            </article>
-        </main>
-        <footer>
-            <nav>
-                <a href="./post5.html">
-                    <span>Next →</span>
-                    <span>Pure CSS Flash Cards</span>
-                    </a>
-                <a href="./post3.html">
-                    <span>← Previous</span>
-                    <span>CSS Zen Garden Activity</span>
-                </a>
-                <a href="../blog.html">Archive</a>
-            </nav>
-            <span class="copyright">© Stephen Smith 2022</span>
-        </footer>
-    </div>
+        <article class="post__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales elit vitae diam molestie
+            tempor. Ut luctus condimentum est aliquam malesuada. Ut imperdiet suscipit scelerisque. Donec
+            tincidunt, arcu nec maximus euismod, turpis dui pretium lacus,
+            vel egestas ante lorem sit amet dui. Aenean at efficitur ante. Duis at mauris ut nisl euismod
+            ornare. Etiam porttitor tincidunt justo, sed ultrices lectus hendrerit id. Cras ac mauris id nibh
+            blandit blandit vulputate a nisi. Duis blandit cursus urna, at varius erat sollicitudin at. Nulla
+            facilisi.
+          </p>
+          <p>
+            Nam diam est, commodo eu maximus sed, feugiat quis sapien. Morbi et lobortis neque, in placerat
+            nulla. Vestibulum purus mi, eleifend in vestibulum in, eleifend a sem. Sed pellentesque consectetur
+            diam, a elementum arcu pharetra et. Sed elementum libero magna,
+            scelerisque sodales urna luctus vel. Phasellus et est ut ante accumsan maximus et id augue.
+            Pellentesque efficitur sem at eros pretium maximus. Ut vel nisi non nisi rhoncus dignissim. Proin
+            facilisis elit urna, et mollis turpis facilisis facilisis.
+          </p>
+          <p>
+            Suspendisse cursus rhoncus dolor id commodo. Nulla lacinia ultricies ornare. In vel pharetra nisi.
+            Aliquam bibendum non orci id rutrum. Aenean dolor tellus, suscipit ac turpis nec, scelerisque
+            placerat ipsum. Proin id ante euismod, scelerisque mauris vel, iaculis augue. Sed eget tellus
+            tortor.
+            Cras bibendum luctus sapien eu dignissim. Duis nec magna quis risus ornare suscipit. Duis id est
+            sodales, mollis nulla nec, fermentum nulla. Nam egestas, dui sit amet pretium ultricies, nisi nibh
+            pretium nisl, et vehicula turpis quam quis mi. Nunc sed condimentum ante, vitae congue arcu.
+            Maecenas vel magna ex. Morbi sit amet orci est.
+          </p>
+          <p>
+            Quisque consectetur, odio vitae dapibus mattis, dui ante vehicula lorem, ut ullamcorper nisl nulla
+            scelerisque augue. Curabitur ultrices, urna in dignissim consectetur, nunc nulla ornare massa, quis
+            fringilla nisi lectus nec sem. Ut porttitor purus dolor, volutpat imperdiet ante ultricies nec.
+            Integer at malesuada urna.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Quisque nec urna orci. Praesent a fermentum eros, a suscipit eros. Suspendisse et ornare enim.
+            Suspendisse non sem id urna feugiat dignissim. Vestibulum in risus eu dolor molestie vulputate vitae
+            nec erat. Proin tellus dolor, viverra quis
+            consectetur non, lacinia non sapien. Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Curabitur lobortis porttitor lorem, vel semper turpis facilisis sit amet.
+            Praesent malesuada tempus vehicula. Nullam nec quam id magna fringilla convallis mattis nec dui.
+            Nulla libero est, condimentum in lacus ac, accumsan commodo felis.
+          </p>
+          <p>
+            Donec sit amet condimentum odio. Integer rhoncus est viverra quam venenatis eleifend. Quisque vel
+            tempor sapien, id mattis eros. Morbi quis iaculis nulla, et tristique sapien. Sed semper egestas
+            sapien varius congue. Mauris semper vulputate ante id bibendum. In imperdiet convallis ex, nec
+            tincidunt eros ultricies vel. Nunc aliquam semper elit sed facilisis.
+            Nam ut luctus ex. Nam volutpat elit suscipit leo tincidunt vulputate. Suspendisse congue urna quis
+            ligula semper, in imperdiet diam sollicitudin. Curabitur pharetra maximus enim. Cras eu pharetra
+            risus. Suspendisse sollicitudin non mauris quis tristique. Integer ante ex, cursus eget lorem at,
+            faucibus commodo neque.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <nav class="post-nav">
+        <a class="post-nav__link" href="./post5.html">
+            <span>
+                Next →
+            </span>
+            <span>
+                Pure CSS Flash Cards
+            </span>
+            </a>
+        <a class="post-nav__link" href="./post3.html">
+          <span>
+              ← Previous
+          </span>
+          <span>
+              CSS Zen Garden Activity
+          </span>
+        </a>
+        <a class="post-nav__link" href="../blog.html">
+          Archive
+        </a>
+      </nav>
+      <span class="copyright">© Stephen Smith 2022</span>
+    </footer>
+  </div>
 </body>
 
 </html>

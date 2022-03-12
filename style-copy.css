@@ -262,22 +262,29 @@ details summary::-webkit-details-marker {
 /* SKILLS */
 
 .skills{
-    border-radius: 0.5em;
+    border-radius: 8px;
     box-shadow: -17px 17px var(--shadow-closed-color);
     background: linear-gradient(to bottom, var(--shadow-closed-color) 0%, var(--shadow-closed-color) 100%) no-repeat;
-    background-position: calc(100% - 17px + 3px) 14px;
-    border: 3px solid var(--frame-closed-color);
+    background-position: calc(100% - 17px) 14px;
     color:var(--main-font-color);
     font-family: var(--ff-text);
     font-size: var(--fs-400);
     margin-top: 80px;
 }
 .skills__heading {
-    color: var(--frame-title-color);
     background-color: var(--frame-closed-color);
+    border: 3px solid var(--frame-closed-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: var(--frame-title-color);
     display: block;
     padding: 17px;
     text-align: right;
+}
+.skills__content {
+    border: 3px solid var(--frame-closed-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .skills__icons {
     display: flex;
@@ -351,6 +358,23 @@ input:checked ~ .post-container .post-container__tile {
     display: none;
 }
 
+
+.category-checkbox {
+    position: absolute;
+    border-radius: 0.95em;
+    display: inline-block;
+    margin: 0.5em 0.5em 0 0;
+    width: 90px;
+    height: 30px;
+    opacity: 0;
+}
+.post-archive input:focus + label {
+    outline: 1px solid var(--frame-closed-color);
+}
+.post-archive input:focus:not(:focus-visible) + label {
+    outline: none;
+}
+
 /*Filtered Post Tiles*/
 
 .post-container__tile--filtered {
@@ -380,7 +404,6 @@ header a {
 }
 
 /* category filters */
-
 .category-filter {
     border-radius: 0.95em;
     border: 2px solid var(--main-font-color);
@@ -422,6 +445,26 @@ footer {
     text-align: center;
     color: var(--main-font-color);
 }
-footer a {
+.copyright {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* POST */
+.post {
     color: var(--main-font-color);
+    font-family: var(--ff-text);
+    font-size: var(--fs-400);
+}
+.post-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.post-nav__link {
+    color: var(--main-font-color);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }

@@ -277,6 +277,23 @@ label {
 }
 
 
+.theme-toggle input {
+    cursor: pointer;
+    border-radius: 34px;
+    height: 26px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 62px;
+}
+
+.theme-toggle input:focus + div {
+    outline: 1px solid var(--frame-closed-color);
+}
+.theme-toggle input:focus:not(:focus-visible) + div {
+    outline: none;
+}
+
 input:checked + label {
     background:var(--bf-checked-bg-color);
     color: var(--bf-checked-font-color);
