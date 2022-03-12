@@ -239,7 +239,7 @@ details summary::-webkit-details-marker {
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     background: linear-gradient(to bottom, var(--shadow-open-color) 0%, var(--shadow-open-color) 100%) no-repeat;
-    background-size: calc(100% - 17px + 3px);
+    background-position: calc(100% - 17px + 3px);
     border: 3px solid var(--frame-open-color);
     border-top: none;
     box-shadow: -17px 17px var(--shadow-open-color);
