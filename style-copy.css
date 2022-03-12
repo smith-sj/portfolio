@@ -123,13 +123,13 @@ h3 {
 /* BUTTON */
 
 .button {
-    border-radius: 0.7em;
+    border-radius: 0.95em;
     border: 2px solid var(--main-font-color);
     color: var(--main-font-color);
     font-family: var(--ff-text);
     font-size: var(--fs-400);
     font-weight: 400;
-    padding: 0.4em;
+    padding: 0.4em 0.6em;
     text-decoration: none;
 }
 .button:hover {
@@ -207,6 +207,7 @@ details summary::-webkit-details-marker {
     margin-bottom: 35px;
 }
 .accordian__heading {
+    border-radius: 0.5em;
     background: var(--expand-button);
     background-color: var(--frame-closed-color);
     background-origin: content-box;
@@ -222,6 +223,8 @@ details summary::-webkit-details-marker {
     padding: 17px;
 }
 .accordian[open] .accordian__heading {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     background: var(--collapse-button);
     background-color: var(--frame-open-color);
     background-origin: content-box;
@@ -233,6 +236,8 @@ details summary::-webkit-details-marker {
     color: var(--frame-title-open);
 }
 .accordian__content {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
     background: linear-gradient(to bottom, var(--shadow-open-color) 0%, var(--shadow-open-color) 100%) no-repeat;
     background-size: calc(100% - 17px + 3px);
     border: 3px solid var(--frame-open-color);
@@ -257,6 +262,7 @@ details summary::-webkit-details-marker {
 /* SKILLS */
 
 .skills{
+    border-radius: 0.5em;
     box-shadow: -17px 17px var(--shadow-closed-color);
     background: linear-gradient(to bottom, var(--shadow-closed-color) 0%, var(--shadow-closed-color) 100%) no-repeat;
     background-position: calc(100% - 17px + 3px) 14px;
@@ -376,15 +382,18 @@ header a {
 /* category filters */
 
 .category-filter {
-    border-radius: 0.7em;
+    border-radius: 0.95em;
     border: 2px solid var(--main-font-color);
     color: var(--main-font-color);
+    cursor: pointer;
     display: inline-block;
     font-family: var(--ff-text);
     font-size: var(--fs-400);
     font-weight: 400;
     margin: 0.5em 0.5em 0 0;
-    padding: 0.4em;
+    min-width: 2.6em;
+    padding: 0.4em 0.6em;
+    text-align: center;
     text-decoration: none;
 }
 input:checked + .category-filter {
