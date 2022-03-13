@@ -142,7 +142,7 @@ h3 {
     font-family: var(--ff-text);
     font-size: var(--fs-700);
     display: block;
-    margin-bottom: 50px;
+    margin: 70px 0;
 }
 
 /* SECTION HEAADING */
