@@ -105,11 +105,15 @@ body {
     font-family: var(--ff-text);
     color: var(--main-font-color);
     text-decoration: none;
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
+    font-weight: 900;
     padding: 10px;
 }
 .active{
-    text-decoration: 5px var(--highlight-color) underline;
+    text-decoration: underline;
+    text-decoration-color: var(--highlight-color);
+    text-decoration-thickness: 5px;
+
 }
 .page-container {
     margin: 60px auto 0 auto;
@@ -514,5 +518,29 @@ footer {
     .main-navbar {
         padding-left: 10vw;
         padding-right: 10vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .theme-toggle {
+        margin:0;
+        padding: 10px;
+    }
+    .main-navbar {
+        height: auto;
+        padding: 20px;
+        justify-content: start;
+        align-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .main-navbar__link-wrapper {
+        margin:0;
+        margin-top: 5px;
+    }
+    .main-navbar__link {
+        display: block;
+        padding: 10px;
     }
 }
