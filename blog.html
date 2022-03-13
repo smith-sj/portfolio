@@ -14,31 +14,34 @@
 </head>
 
 <body>
-  <!-- THEME SWITCH -->
-  <label class="theme-toggle" for="checkbox">
-    <input type="checkbox" id="checkbox" tabindex="1" />
-    <div class="theme-toggle__slider"></div>
-  </label>
-  <script src="./mode-switch.js"></script>
-  <div class="page-container">
+  <!-- MAIN NAV -->
+  <nav class="main-navbar">
     <!-- HEADER -->
-    <header class="main-header">
-      <a href="./index.html">
-        <h1 class="main-header__heading">Stephen Smith</h1>
+    <h1>
+      <a href="./index.html" class="nav-heading">
+        Stephen Smith
       </a>
-    </header>
+    </h1>
+    <!-- THEME SWITCH -->
+    <label class="theme-toggle navbar-toggle" for="checkbox">
+      <input type="checkbox" id="checkbox" tabindex="1" />
+      <div class="theme-toggle__slider"></div>
+    </label>
+    <script src="./mode-switch.js"></script>
+  </nav>
+  <div class="page-container">
     <main>
       <!-- POST ARCHIVE -->
       <section class="post-archive">
-        <h2 class="section-heading">Blog</h2>
+        <h2 class="section-heading">Blog Archive</h2>
 
         <!-- CATEGORY FILTERS -->
-        <span class="category-heading"> Filters:  </span>
-        <input class="category-checkbox" type="checkbox" id="general" name="blog-category"/>
+        <span class="category-heading"> Filters: </span>
+        <input class="category-checkbox" type="checkbox" id="general" name="blog-category" />
         <label for="general" class="category-filter">
-        General
+          General
         </label>
-        <input class="category-checkbox" type="checkbox" id="news" name="blog-category"/>
+        <input class="category-checkbox" type="checkbox" id="news" name="blog-category" />
         <label for="news" class="category-filter">
           News
         </label>
@@ -183,11 +186,12 @@
             <span class="post-category">general, news</span>
           </a>
         </div>
-      </div>
-    </main>
-    <footer>
-      <span class="copyright">© Stephen Smith 2022</span>
-    </footer>
+  </div>
+  </main>
+  <footer>
+    <span class="copyright">© Stephen Smith 2022</span>
+  </footer>
   </div>
 </body>
+
 </html>
