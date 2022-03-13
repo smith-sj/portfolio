@@ -89,12 +89,12 @@ body {
     color: var(--main-font-color);
     color: var(--main-font-color);
     font-family: var(--ff-display);
-    font-size: var(--fs-600);
+    font-size: var(--fs-700);
     margin: 0;
     display: block;
     margin-right: auto;
     text-decoration: none;
-    width: 7ch;
+    width: 4.5ch;
 }
 .main-navbar__link-wrapper {
     margin-left: auto;
