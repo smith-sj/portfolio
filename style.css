@@ -198,7 +198,7 @@ but not for mouse users. */
 }
 /*--------------------------------------------*/
 
-/* ACCORDIANS */
+/* ACCORDIAN */
 
 details summary::-webkit-details-marker {
     display: none; /* hides arrow */
@@ -319,7 +319,7 @@ details summary::-webkit-details-marker {
 }
 
 /*--------------------------------------------*/
-/* POSTS */
+/* BLOG POSTS */
 
 .recent-posts {
     margin-top: 80px;
@@ -358,16 +358,7 @@ will be hidden and replaced with filtered tiles*/
 input:checked ~ .post-container .post-container__tile {
     display: none;
 }
-.category-checkbox {
-    border-radius: 0.95em;
-    cursor: pointer;
-    display: inline-block;
-    height: 30px;
-    margin: 0.5em 0.5em 0 0;
-    opacity: 0;
-    position: absolute;
-    width: 90px;
-}
+
 .post-archive input:focus + label {
     outline: 1px solid var(--frame-closed-color);
 }
@@ -376,7 +367,6 @@ input:checked ~ .post-container .post-container__tile {
 }
 
 /*Filtered Post Tiles*/
-
 .post-container__tile--filtered {
     background-color: var(--blog-tile-bg-color);
     color: var(--blog-tile-font-color);
@@ -403,6 +393,16 @@ header a {
 }
 
 /* category filters */
+.category-checkbox {
+    border-radius: 0.95em;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 0.5em 0.5em 0 0;
+    opacity: 0;
+    position: absolute;
+    width: 90px;
+}
 .category-heading {
     color: var(--main-font-color);
     display: block;
