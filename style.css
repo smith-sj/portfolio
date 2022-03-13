@@ -78,36 +78,39 @@ body {
 
 .main-navbar {
     color: var(--main-font-color);
-    box-sizing: content-box;
     border-bottom: solid 2px var(--main-font-color);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     height: 100px;
 }
 .main-navbar__heading {
     color: var(--main-font-color);
     color: var(--main-font-color);
-    display: block;
     font-family: var(--ff-display);
     font-size: var(--fs-600);
     margin: 0;
+    display: block;
+    margin-right: auto;
     text-decoration: none;
     width: 7ch;
 }
 .main-navbar__link-wrapper {
     margin-left: auto;
+    margin-right: 0;
 }
 .main-navbar__link {
+    display: inline-block;
     font-family: var(--ff-text);
     color: var(--main-font-color);
     text-decoration: none;
     font-size: var(--fs-400);
     padding: 10px;
 }
-
-
+.active{
+    text-decoration: 5px var(--highlight-color) underline;
+}
 .page-container {
     margin: 60px auto 0 auto;
     width: 80%;
@@ -177,7 +180,7 @@ h3 {
     display: block;
     height: 26px;
     width: 62px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 /* The toggle's background */
 .theme-toggle__slider {
@@ -221,7 +224,7 @@ it is accessible by the tab key.*/
 /* The outline appears for keyboard users
 but not for mouse users. */
 .theme-toggle input:focus + div {
-    outline: 1px solid var(--frame-closed-color);
+    outline: 2px solid var(--frame-closed-color);
 }
 .theme-toggle input:focus:not(:focus-visible) + div {
     outline: none;
@@ -424,14 +427,9 @@ header a {
 
 /* category filters */
 .category-checkbox {
-    border-radius: 0.95em;
     cursor: pointer;
-    display: inline-block;
-    height: 30px;
-    margin: 0.5em 0.5em 0 0;
     opacity: 0;
     position: absolute;
-    width: 90px;
 }
 .category-heading {
     color: var(--main-font-color);
@@ -510,7 +508,7 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
-    .theme-toggle--homepage {
+    .theme-toggle {
         margin-right: 10vw;
     }
     .main-navbar {
