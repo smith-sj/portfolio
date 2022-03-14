@@ -3,7 +3,7 @@
 # S.J. Smith Portfolio
 
 
-Website: https://sjsmith.dev
+Website: https://smith-sj.github.io/portfolio/
 
 Github: https://github.com/smith-sj/portfolio
 
