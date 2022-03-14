@@ -536,7 +536,7 @@ footer {
     border-radius: 50px;
     padding: 10px;
     display: inline-block;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
 }
 .project-tile h3 {
     color: var(--shadow-open-color);
@@ -548,6 +548,23 @@ footer {
     display: block;
     font-size: var(--fs-300);
     font-weight: lighter;
+}
+
+/* CONTACT LINK */
+.contact-break {
+    display: block;
+}
+a.contact-link {
+    background-color: var(--frame-closed-color);
+    border-radius: 50px;
+    border: 2px solid var(--main-font-color);
+    color: var(--shadow-open-color);
+    display: inline-block;
+    font-family: var(--ff-text);
+    font-size: var(--fs-300);
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    padding: 10px;
 }
 
 @media only screen and (min-width: 1000px) {
