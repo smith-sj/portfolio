@@ -46,56 +46,93 @@
         </header>
         <article class="post__content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales elit vitae diam molestie
-            tempor. Ut luctus condimentum est aliquam malesuada. Ut imperdiet suscipit scelerisque. Donec
-            tincidunt, arcu nec maximus euismod, turpis dui pretium lacus,
-            vel egestas ante lorem sit amet dui. Aenean at efficitur ante. Duis at mauris ut nisl euismod
-            ornare. Etiam porttitor tincidunt justo, sed ultrices lectus hendrerit id. Cras ac mauris id nibh
-            blandit blandit vulputate a nisi. Duis blandit cursus urna, at varius erat sollicitudin at. Nulla
-            facilisi.
+            I decided to put my recently acquired CSS knowledge to the test by creating some functional flash 
+            cards using only CSS. As we were also learning about HTTP, it felt like a fitting theme for the project. 
+            The term “mobile first” was also thrown around a lot in class this week, so I set out to make this 
+            project functional on mobile first and then adjusted for desktop.
+          </p>
+          <h3 class="post-subheading">What are some cool things I learned?</h3>
+          <p>
+            <ul>
+              <li>Flexbox layout</li>
+              <li>Building Mobile First</li>
+              <li>The power of the calc() CSS function</li>
+              <li>The <em>Checkbox Hack</em></li>
+            </ul>
+          </p>
+
+          <h3 class="post-subheading">What were some challenges I faced?</h3>
+          <p>
+            <ul>
+              <li>Making mobile first layouts and CSS animations that would translate well to desktop</li>
+              <li>Discovering the different ways each mobile browser treats the :hover pseudo-selector</li>
+            </ul>
+          </p>
+          <figure class="post-figure">
+            <img class="post-figure__image" src="./blog-assets/flash-cards.png">
+            <figcaption class="post-figure__caption">functional flashcards using CSS only</figcaption>
+          </figure>
+          <h3 class="post-subheading">General Layout and Animation</h3> 
+          <p>
+            I have to admit, learning CSS animation was easier than I thought it would be, that said, this 
+            project uses some pretty basic ones. There are the initial fanout <b>keyframes</b> for each card, that 
+            activate when the page loads and are responsible for the cards moving to their initial positions 
+            and then there are the <b>transform</b> rules that are activated on hover (this was eventually changed 
+            to on-tap, but we’ll get to that later.) Turns out CSS keyframes are really quite simple, 
+            and they really just work.
           </p>
           <p>
-            Nam diam est, commodo eu maximus sed, feugiat quis sapien. Morbi et lobortis neque, in placerat
-            nulla. Vestibulum purus mi, eleifend in vestibulum in, eleifend a sem. Sed pellentesque consectetur
-            diam, a elementum arcu pharetra et. Sed elementum libero magna,
-            scelerisque sodales urna luctus vel. Phasellus et est ut ante accumsan maximus et id augue.
-            Pellentesque efficitur sem at eros pretium maximus. Ut vel nisi non nisi rhoncus dignissim. Proin
-            facilisis elit urna, et mollis turpis facilisis facilisis.
+            I found the most challenging part to be translating the layout and animations from mobile to 
+            desktop. I ended up using dynamic sizing units for mobile and static sizing for desktop, it just 
+            ended up being easier but did feel like I was cheating a little. If I find some spare time during 
+            this crazy bootcamp, I’d like to refactor the desktop layout to use dynamic sizing as well.
+          </p>
+          <h3 class="post-subheading">The Hover Dilemma and Discovery of CSS Hacks</h3>
+          <p>
+            I now had a pretty cool deck of cards that fan out and then pop up when you hover over them. 
+            As I was using Chrome developer tools in mobile layout, the hover effect translated pretty smoothly. 
+            I just tapped (clicked) a card and it would pop up, and if I tapped another card it would pop up and 
+            the other would pop down. The only issue was that you couldn’t tap the card to go back down. I was 
+            okay with that. So I pushed it up to GitHub, deployed it to Pages, checked it on my Android phone 
+            with Chrome and bam! It worked beautifully. Then I grabbed my partner’s iPhone, opened it up in 
+            Safari and ”… oh.. No, what is this!?” Safari treats hover differently! And in this case, it was 
+            horrible. On Safari you have to hold the card for a second to activate the hover effect, but since 
+            the only place to press the card was text, it would select the text and you’d have this weird 
+            highlighted nothingness. The whole experience just felt off. I could probably have fixed the text 
+            selection problem. But the feeling of having to hold the cards was just bad in general. Since most 
+            people will probably view this project with mobile Safari, this just wasn’t going to cut it.
+          </p>
+          <blockquote class="post-blockquote">
+            <p>Safari treats hover differently... you have to hold the card for a second to activate the 
+              hover effect, but since the only place to press the card was text, it would select the text 
+              and you’d have this weird highlighted nothingness.</p>
+        </blockquote>
+          <p>
+            Then my brother came to the rescue. Yes, my actual brother, Derick Yearnsmith, CSS veteran and all-round 
+            talented dude. He told me about these <em>CSS Hacks</em> - some sort of ancient art, known only by the bravest 
+            of coders... and also explained in detail at <a href="https://css-tricks.com/">CSS Tricks</a>. The 3 that Derick pointed me towards were 
+            the <em>:target</em> trick, <em>Checkbox Hack</em> and <em>Radio Button Hack</em>. I won’t go into how they all work because CSS 
+            Tricks does that better than I could, but I will say that I tried all of them and went with the 
+            Checkbox Hack in the end. The :target trick was a bit janky - it worked - but it caused the page to 
+            jump and although others have managed to implement it seamlessly, I couldn't get it to work nicely with 
+            this project. The Radio Button Hack was smoother, and it worked well, but it had the one drawback of not 
+            allowing you to tap a card back down, as is the case with radio buttons, the only way to deselect one 
+            is to select another. So the Checkbox Hack won.
           </p>
           <p>
-            Suspendisse cursus rhoncus dolor id commodo. Nulla lacinia ultricies ornare. In vel pharetra nisi.
-            Aliquam bibendum non orci id rutrum. Aenean dolor tellus, suscipit ac turpis nec, scelerisque
-            placerat ipsum. Proin id ante euismod, scelerisque mauris vel, iaculis augue. Sed eget tellus
-            tortor.
-            Cras bibendum luctus sapien eu dignissim. Duis nec magna quis risus ornare suscipit. Duis id est
-            sodales, mollis nulla nec, fermentum nulla. Nam egestas, dui sit amet pretium ultricies, nisi nibh
-            pretium nisl, et vehicula turpis quam quis mi. Nunc sed condimentum ante, vitae congue arcu.
-            Maecenas vel magna ex. Morbi sit amet orci est.
+            In a nutshell, the card’s main container is a <b>label</b> with the <b>for</b> attribute set to an input with type 
+            <b>checkbox</b>. The input should also include the hidden attribute, so that the checkbox is invisible. Over 
+            in CSS land, the <b>:checked</b> pseudo-class selector is combined with <b>+ #cardID</b> to select the appropriate label. 
+            The rule can then be whatever needs changing, in this case: the label’s transform. 
+            The result is smooth and functional.
           </p>
+          <h3 class="post-subheading">Conclusion</h3>
           <p>
-            Quisque consectetur, odio vitae dapibus mattis, dui ante vehicula lorem, ut ullamcorper nisl nulla
-            scelerisque augue. Curabitur ultrices, urna in dignissim consectetur, nunc nulla ornare massa, quis
-            fringilla nisi lectus nec sem. Ut porttitor purus dolor, volutpat imperdiet ante ultricies nec.
-            Integer at malesuada urna.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-            Quisque nec urna orci. Praesent a fermentum eros, a suscipit eros. Suspendisse et ornare enim.
-            Suspendisse non sem id urna feugiat dignissim. Vestibulum in risus eu dolor molestie vulputate vitae
-            nec erat. Proin tellus dolor, viverra quis
-            consectetur non, lacinia non sapien. Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Curabitur lobortis porttitor lorem, vel semper turpis facilisis sit amet.
-            Praesent malesuada tempus vehicula. Nullam nec quam id magna fringilla convallis mattis nec dui.
-            Nulla libero est, condimentum in lacus ac, accumsan commodo felis.
+            I learned a lot from doing this little project, and as a bonus I got more comfortable branching and 
+            merging in git. I could use this as some sort of menu on a portfolio site or something in the future, 
+            but for now, I'll let it be a fun experiment.
           </p>
-          <p>
-            Donec sit amet condimentum odio. Integer rhoncus est viverra quam venenatis eleifend. Quisque vel
-            tempor sapien, id mattis eros. Morbi quis iaculis nulla, et tristique sapien. Sed semper egestas
-            sapien varius congue. Mauris semper vulputate ante id bibendum. In imperdiet convallis ex, nec
-            tincidunt eros ultricies vel. Nunc aliquam semper elit sed facilisis.
-            Nam ut luctus ex. Nam volutpat elit suscipit leo tincidunt vulputate. Suspendisse congue urna quis
-            ligula semper, in imperdiet diam sollicitudin. Curabitur pharetra maximus enim. Cras eu pharetra
-            risus. Suspendisse sollicitudin non mauris quis tristique. Integer ante ex, cursus eget lorem at,
-            faucibus commodo neque.
-          </p>
+          <span>Check them out <a href="https://smith-sj.github.io/CSS-only-flash-cards/">here.</a></span>
         </article>
       </section>
     </main>
