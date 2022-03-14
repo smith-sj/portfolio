@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="32"
-     inkscape:cx="8"
-     inkscape:cy="8.0557701"
+     inkscape:zoom="22.627417"
+     inkscape:cx="6.1659418"
+     inkscape:cy="16.392542"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -54,16 +54,16 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g5163"
-       transform="translate(0.70312492,0.10937488)">
+       id="g6543"
+       transform="translate(0.0934129,-0.0751747)">
       <g
-         transform="matrix(0.12524798,0,0,-0.12524798,14.060266,6.7633933)"
-         id="g240">
+         transform="matrix(0.12523035,0,0,-0.12523035,14.669026,5.8210284)"
+         id="g160">
         <path
            inkscape:connector-curvature="0"
-           id="path242"
+           id="path162"
            style="fill:#f05232;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 0,0 v 9 h -9 v 9 h -9 v 9 h -9 v 9 h -9 v 9 h -9 v 9 h -18 v -9 -9 h 9 v -9 h 9 V 18 9 h 9 V 0 h 18 V -18 H -36 V 0 h -9 v 9 h -9 v -36 h 9 v -18 h -18 v 18 18 9 9 18 9 h -9 -9 v -9 h -9 v -9 h -9 V 9 h -9 V 0 h -9 v -18 h 9 v -9 h 9 v -9 h 9 v -9 h 9 v -9 h 9 v -9 h 9 v -9 h 18 v 9 h 9 v 9 h 9 v 9 h 9 v 9 h 9 v 9 h 9 v 9 H 9 V 0 Z" />
+           d="m 0,0 h -9 v 9 h -9 v 9 h -9 v 9 h -9 v 9 h -9 v 9 h -18 v -9 -9 h 9 v -9 h 9 V 9 0 h 9 v -9 h 18 v -18 h -18 v 18 h -9 v 9 h -9 v -36 h 9 v -18 h -18 v 18 18 9 9 18 9 h -9 -9 v -9 h -9 V 9 h -9 V 0 h -9 v -9 h -9 v -18 h 9 v -9 h 9 v -9 h 9 v -9 h 9 v -9 h 9 v -9 h 9 v -9 h 18 v 9 h 9 v 9 h 9 v 9 h 9 v 9 h 9 v 9 h 9 v 9 H 9 V -9 H 0 Z" />
       </g>
     </g>
   </g>
