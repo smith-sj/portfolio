@@ -622,6 +622,7 @@ a.contact-link {
         max-width: 400px;
     }
     .accordian[open] {
+        
         max-width: 400px;
     }
 
@@ -692,6 +693,30 @@ a.contact-link {
         padding-left: 10vw;
         padding-right: 10vw;
     }
+
+    .blog-main {
+        display: block;
+    }
+  
+
+    .archive-container {
+        column-count: 3;
+        column-gap: 20px;
+        display: flex;
+        margin-top: 40px;
+    }
+    .post-container__tile--filtered {
+        margin-top: 20px;
+        max-width: 29%;
+        column-span: 1;
+    }
+    .post-container__tile {
+        margin-top: 20px;
+        max-width: 29%;
+        column-span: 1;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 320px) {
