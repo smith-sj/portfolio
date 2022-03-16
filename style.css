@@ -689,9 +689,18 @@ a.contact-link {
     .content-box__icons img {
         max-width: 50px;
     }
+    .post-figure {
+        float: right;
+        width: 50%;
+        margin: 15px;
+    }
+
 
 
     .blog-main {
+        display: block;
+    }
+    .post-main {
         display: block;
     }
   
