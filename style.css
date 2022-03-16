@@ -180,6 +180,9 @@ h3 {
     height: 26px;
     width: 62px;
     margin-left: 10px;
+    text-align: center;
+    font-family: var(--ff-text);
+    font-size: var(--fs-300);
 }
 /* The toggle's background */
 .theme-toggle__slider {
@@ -216,7 +219,7 @@ it is accessible by the tab key.*/
     border-radius: 34px;
     height: 26px;
     margin: 0;
-    opacity: 0;
+    opacity: 0  ;
     position: absolute;
     width: 62px;
 }
