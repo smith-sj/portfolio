@@ -184,6 +184,7 @@ h3 {
     font-family: var(--ff-text);
     font-size: var(--fs-300);
 }
+
 /* The toggle's background */
 .theme-toggle__slider {
     background-color: var(--shadow-closed-color);
@@ -194,6 +195,7 @@ h3 {
 }
 /*The 'sun' switch*/
 .theme-toggle__slider:before {
+    cursor: pointer;
     display: block;
     background-image: url(./assets/circle.svg);
     background-repeat: no-repeat;
@@ -215,13 +217,8 @@ input:checked + .theme-toggle__slider:before {
 so that, when in focus, it matches the slider. This way,
 it is accessible by the tab key.*/
 .theme-toggle input {
-    cursor: pointer;
-    border-radius: 34px;
-    height: 26px;
-    margin: 0;
-    opacity: 0  ;
+    opacity: 0;
     position: absolute;
-    width: 62px;
 }
 /* The outline appears for keyboard users
 but not for mouse users. */
