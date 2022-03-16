@@ -144,7 +144,6 @@ h3 {
 }
 .main-navbar__link-wrapper {
     margin-left: auto;
-    margin-right: 0;
 }
 .main-navbar__link {
     display: inline-block;
@@ -153,7 +152,7 @@ h3 {
     text-decoration: none;
     font-size: var(--fs-500);
     font-weight: 500;
-    padding: 10px;
+    margin-right: 10px;
 }
 .active{
     text-decoration: underline;
@@ -699,8 +698,8 @@ a.contact-link {
 
     .archive-container {
         column-count: 3;
-        column-gap: 20px;
         display: flex;
+        justify-content: space-between;
         margin-top: 40px;
     }
     .archive-container .post-container__tile--filtered {
