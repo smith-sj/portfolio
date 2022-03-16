@@ -487,6 +487,15 @@ footer {
     font-family: var(--ff-text);
     font-size: var(--fs-400);
 }
+.post__link {
+    color: var(--main-font-color);
+    text-decoration: underline;
+}
+.post__link:hover {
+    color: var(--main-font-color);
+    text-decoration: underline;
+    font-weight: 800;
+}
 .post-header__date {
     font-weight: 600;
 }

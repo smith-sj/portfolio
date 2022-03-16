@@ -30,7 +30,7 @@
     <a class="main-navbar__link" href="../blog.html">Blog</a>
     </div>
     <!-- THEME SWITCH -->
-    <label class="theme-toggle" for="checkbox">
+    <label class="theme-toggle" for="checkbox" aria-label="theme toggle">
       <input type="checkbox" id="checkbox" tabindex="0" />
       <div class="theme-toggle__slider"></div>
     </label>
@@ -69,9 +69,9 @@
             </ul>
           </p>
           <figure class="post-figure">
-            <img class="post-figure__image" src="./blog-assets/flash-cards.png">
+            <img class="post-figure__image" src="./blog-assets/flash-cards.png" alt="screenshot of 'CSS Only Flash Cards' project">
             <figcaption class="post-figure__caption">functional flashcards using CSS only</figcaption>
-          </figure>
+          </figure>roject">
           <h3 class="post-subheading">General Layout and Animation</h3> 
           <p>
             I have to admit, learning CSS animation was easier than I thought it would be, that said, this 
@@ -110,7 +110,7 @@
           <p>
             Then my brother came to the rescue. Yes, my actual brother, Derick Yearnsmith, CSS veteran and all-round 
             talented dude. He told me about these <em>CSS Hacks</em> - some sort of ancient art, known only by the bravest 
-            of coders... and also explained in detail at <a href="https://css-tricks.com/">CSS Tricks</a>. The 3 that Derick pointed me towards were 
+            of coders... and also explained in detail at <a class="post__link" href="https://css-tricks.com/">CSS Tricks</a>. The 3 that Derick pointed me towards were 
             the <em>:target</em> trick, <em>Checkbox Hack</em> and <em>Radio Button Hack</em>. I won’t go into how they all work because CSS 
             Tricks does that better than I could, but I will say that I tried all of them and went with the 
             Checkbox Hack in the end. The :target trick was a bit janky - it worked - but it caused the page to 
@@ -132,7 +132,7 @@
             merging in git. I could use this as some sort of menu on a portfolio site or something in the future, 
             but for now, I'll let it be a fun experiment.
           </p>
-          <span>Check them out <a href="https://smith-sj.github.io/CSS-only-flash-cards/">here.</a></span>
+          <span>Check them out <a class="post__link" href="https://smith-sj.github.io/CSS-only-flash-cards/">here.</a></span>
         </article>
       </section>
     </main>
