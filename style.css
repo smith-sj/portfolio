@@ -705,12 +705,12 @@ a.contact-link {
         display: flex;
         margin-top: 40px;
     }
-    .post-container__tile--filtered {
+    .archive-container .post-container__tile--filtered {
         margin-top: 20px;
         max-width: 29%;
         column-span: 1;
     }
-    .post-container__tile {
+    .archive-container .post-container__tile {
         margin-top: 20px;
         max-width: 29%;
         column-span: 1;
