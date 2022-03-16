@@ -622,7 +622,7 @@ a.contact-link {
         max-width: 400px;
     }
     .accordian[open] {
-        width: 400px;
+        max-width: 400px;
     }
 
     .skills {
