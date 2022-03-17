@@ -128,7 +128,7 @@ h3 {
     justify-items: start;
     align-items: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .main-navbar__heading {
@@ -583,9 +583,9 @@ a.contact-link {
     padding: 10px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
     .page-container {
-        max-width: 800px;
+        max-width: 1000px;
     }
     .subheading {
         margin: 0 auto 0 0;
