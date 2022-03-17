@@ -521,7 +521,7 @@ footer {
     text-align: right;
 }
 .post-blockquote {
-    border: solid var(--main-font-color) 3px;
+    border: solid var(--frame-open-color) 3px;
     box-shadow: -15px 15px var(--shadow-open-color);
     background: linear-gradient(to bottom, var(--shadow-open-color) 0%, var(--shadow-open-color) 100%) no-repeat;
     background-position: calc(100% - 12px) 12px;
