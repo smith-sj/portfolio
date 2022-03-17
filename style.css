@@ -583,7 +583,7 @@ a.contact-link {
     padding: 10px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
     .page-container {
         max-width: 1000px;
     }
@@ -595,6 +595,8 @@ a.contact-link {
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 2;
+        z-index: 1;
+        padding: 5px;
     }
 
 .subheading:after {
