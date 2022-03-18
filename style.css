@@ -518,7 +518,9 @@ footer {
     font-weight: 800;
 }
 .post-header__date {
+    display: block;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .post-subheading {
     font-size: var(--fs-600);
