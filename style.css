@@ -558,6 +558,20 @@ footer {
     margin: 20px;
 }
 
+.codepen-wrapper {
+    display: block;
+    margin: 10px 0;
+}
+.codepen {
+    height: 300px;
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border: 5px solid;
+    margin: 0 auto 0;
+}
+
 /* PROJECT TILE */
 
 .project-tile__heading {
@@ -737,6 +751,16 @@ a.contact-link {
         column-span: 1;
     }
 
+    .codepen-wrapper {
+        width: 50%;
+        float: right;
+        margin: 10px;
+    }
+
+    .post-blockquote {
+        float: left;
+        width: 50%;
+    }
 
 }
 

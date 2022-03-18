@@ -47,94 +47,70 @@
           <span class="post-header__date">21.02.2022</span>
         </header>
         <article class="post__content">
-          <p>
-            I decided to put my recently acquired CSS knowledge to the test by creating some functional flash 
-            cards using only CSS. As we were also learning about HTTP, it felt like a fitting theme for the project. 
-            The term “mobile first” was also thrown around a lot in class this week, so I set out to make this 
-            project functional on mobile first and then adjusted for desktop.
-          </p>
-          <h3 class="post-subheading">What are some cool things I learned?</h3>
+          <h3 class="post-subheading">Project Links</h3>
           <p>
             <ul>
-              <li>Flexbox layout</li>
-              <li>Building Mobile First</li>
-              <li>The power of the calc() CSS function</li>
-              <li>The <em>Checkbox Hack</em></li>
+              <li>My CSS Zen Garden is hosted <a href="https://smith-sj.github.io/css-zen-garden/" target="blank"> here</a></li>
+              <li>The Github repo is <a href="https://smith-sj.github.io/css-zen-garden/" target="blank"> here</a></li>
             </ul>
+          </p>
+          <h3 class="post-subheading">What's it about?</h3>
+          <p>
+            Authored by Dave Shea, the original CSS Zen Garden launched almost 20 years ago, in 2003. It has since become one of the most well-known web development resources and
+            has helped raise aesthetic standards of the web by demonstrating what can be accomplished with CSS.
+          </p>
+          <p>
+            Participating in CSS Zen Garden involves 3 simple steps:
+            <ol>
+              <li>Download the HTML and CSS documents at this <a href="http://www.csszengarden.com" target="blank">link</a></li>
+              <li>Style the webpage by only editing the CSS document</li>
+              <li>Don't touch the HTML document</li>
+            </ol>
+            Simple? Yes. Easy?... Well, not for a CSS newbie.
+          </p>
+          <h3 class="post-subheading">The Challenge</h3>
+          <p>
+            In terms of <b>classes</b>, you get what you're given. There is no touching the HTML document, so you're stuck with Shea's document layout.
+            As beautifully and expertly crafted as the document is, if an element isn't classed, you need to use pseudo-selectors to get at them;
+            and if you want to insert anything into the document that isn't already there, you'll have to use pseudo-elements.
+          </p>
+          <p>
+            This alone made the challenge worth it for me. As a new programmer, I had no idea of the power of CSS pseudo selectors and elements. Had I been permitted to insert
+            images into the HTML file, I'd have never discovered that the ::before and ::after selectors can insert content. Not only that, but if you insert an empty string,
+            you can then set a background-image and resize the pseudo element's box to effectively resize the image! <i>(you're probably reading this thinking, "no, duh"
+            but this seriously blew my mind.)</i>
+          </p>
+          <div class="codepen-wrapper">
+            <p class="codepen" data-height="300" data-theme-id="default" data-default-tab="result" data-slug-hash="popgQrN" data-preview="true" data-user="smith-sj">
+            <span>See the Pen <a href="https://codepen.io/smith-sj/pen/popgQrN">
+            Untitled</a> by S.J. Smith (<a href="https://codepen.io/smith-sj">@smith-sj</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </div>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <h3 class="post-subheading">Mix-blend-mode</h3>
+          <p>
+            Pseudo-selectors weren't the only cool things I discovered. Turns out you can do all sorts of things with the CSS mix-blend-mode property, which I used throughout the
+            project. The white sections of the webpage are simply paragraph elements with white backgrounds. The text and icons are actualy black, but, when changing 
+            the mix-blend-mode to "screen", it has the effect of cutting the icon and letters out of the background. As a result, the text and icons share the same 
+            colours as the main background and, even more pleasingly, its smooth gradient flows through them, uninterrupted.
           </p>
 
-          <h3 class="post-subheading">What were some challenges I faced?</h3>
           <p>
-            <ul>
-              <li>Making mobile first layouts and CSS animations that would translate well to desktop</li>
-              <li>Discovering the different ways each mobile browser treats the :hover pseudo-selector</li>
-            </ul>
+            My final project was rather simple, but I think the techniques I used were effective. Ultimately, the vibrant gradient gave the page its personality, and
+            everything else on the page lends itself to the red and blue hues. Combined with some simple visuals and a responisve layout, I think it makes for a pretty
+            decent reading experience.  
           </p>
-          <figure class="post-figure">
-            <img class="post-figure__image" src="./blog-assets/flash-cards.webp" alt="screenshot of 'CSS Only Flash Cards' project">
-            <figcaption class="post-figure__caption">functional flashcards using CSS only</figcaption>
-          </figure>
-          <h3 class="post-subheading">General Layout and Animation</h3> 
-          <p>
-            I have to admit, learning CSS animation was easier than I thought it would be, that said, this 
-            project uses some pretty basic ones. There are the initial fanout <b>keyframes</b> for each card, that 
-            activate when the page loads and are responsible for the cards moving to their initial positions 
-            and then there are the <b>transform</b> rules that are activated on hover (this was eventually changed 
-            to on-tap, but we’ll get to that later.) Turns out CSS keyframes are really quite simple, 
-            and they really just work.
-          </p>
-          <p>
-            I found the most challenging part to be translating the layout and animations from mobile to 
-            desktop. I ended up using dynamic sizing units for mobile and static sizing for desktop, it just 
-            ended up being easier but did feel like I was cheating a little. If I find some spare time during 
-            this crazy bootcamp, I’d like to refactor the desktop layout to use dynamic sizing as well.
-          </p>
-          <h3 class="post-subheading">The Hover Dilemma and Discovery of CSS Hacks</h3>
-          <p>
-            I now had a pretty cool deck of cards that fan out and then pop up when you hover over them. 
-            As I was using Chrome developer tools in mobile layout, the hover effect translated pretty smoothly. 
-            I just tapped (clicked) a card and it would pop up, and if I tapped another card it would pop up and 
-            the other would pop down. The only issue was that you couldn’t tap the card to go back down. I was 
-            okay with that. So I pushed it up to GitHub, deployed it to Pages, checked it on my Android phone 
-            with Chrome and bam! It worked beautifully. Then I grabbed my partner’s iPhone, opened it up in 
-            Safari and ”… oh.. No, what is this!?” Safari treats hover differently! And in this case, it was 
-            horrible. On Safari you have to hold the card for a second to activate the hover effect, but since 
-            the only place to press the card was text, it would select the text and you’d have this weird 
-            highlighted nothingness. The whole experience just felt off. I could probably have fixed the text 
-            selection problem. But the feeling of having to hold the cards was just bad in general. Since most 
-            people will probably view this project with mobile Safari, this just wasn’t going to cut it.
-          </p>
-          <blockquote class="post-blockquote">
-            <p>Safari treats hover differently... you have to hold the card for a second to activate the 
-              hover effect, but since the only place to press the card was text, it would select the text 
-              and you’d have this weird highlighted nothingness.</p>
-        </blockquote>
-          <p>
-            Then my brother came to the rescue. Yes, my actual brother, Derick Yearnsmith, CSS veteran and all-round 
-            talented dude. He told me about these <em>CSS Hacks</em> - some sort of ancient art, known only by the bravest 
-            of coders... and also explained in detail at <a class="post__link" href="https://css-tricks.com/">CSS Tricks</a>. The 3 that Derick pointed me towards were 
-            the <em>:target</em> trick, <em>Checkbox Hack</em> and <em>Radio Button Hack</em>. I won’t go into how they all work because CSS 
-            Tricks does that better than I could, but I will say that I tried all of them and went with the 
-            Checkbox Hack in the end. The :target trick was a bit janky - it worked - but it caused the page to 
-            jump and although others have managed to implement it seamlessly, I couldn't get it to work nicely with 
-            this project. The Radio Button Hack was smoother, and it worked well, but it had the one drawback of not 
-            allowing you to tap a card back down, as is the case with radio buttons, the only way to deselect one 
-            is to select another. So the Checkbox Hack won.
-          </p>
-          <p>
-            In a nutshell, the card’s main container is a <b>label</b> with the <b>for</b> attribute set to an input with type 
-            <b>checkbox</b>. The input should also include the hidden attribute, so that the checkbox is invisible. Over 
-            in CSS land, the <b>:checked</b> pseudo-class selector is combined with <b>+ #cardID</b> to select the appropriate label. 
-            The rule can then be whatever needs changing, in this case: the label’s transform. 
-            The result is smooth and functional.
-          </p>
-          <h3 class="post-subheading">Conclusion</h3>
-          <p>
-            I learned a lot from doing this little project, and as a bonus I got more comfortable branching and 
-            merging in git. I could use this as some sort of menu on a portfolio site or something in the future, 
-            but for now, I'll let it be a fun experiment.
-          </p>
-          <span>Check them out <a class="post__link" href="https://smith-sj.github.io/CSS-only-flash-cards/">here.</a></span>
+
+          <blockquote class="post-blockquote">The text and icons are actualy black, but, when changing 
+            the mix-blend-mode to "screen", it has the effect of cutting the icon and letters out of the background.</blockquote>
+
+            The creators of this challenge have done an amazing service to the CSS community, especially newbies like myself, who need to be thrown in the deep end and 
+            encouraged to think outside the box. CSS Zen Garden is a wonderful example of the true power of CSS and the fact that it has been around since 2003 and is still 
+            inspiring programmers 20 years later just goes to prove the ingeniousness of its conception.
+
+
+
         </article>
       </section>
     </main>
