@@ -372,6 +372,7 @@ details summary::-webkit-details-marker {
 
 /* POST TILES */
 .post-container__tile {
+    transition:0.3s;
     background-color: var(--blog-tile-bg-color);
     color: var(--blog-tile-font-color);
     cursor: pointer;
@@ -385,10 +386,19 @@ details summary::-webkit-details-marker {
     margin-bottom: 5px;
     padding: 10px;
     text-decoration: none;
+    background-blend-mode:luminosity;
 }
-.post-container__tile:hover {
-    background-color: var(--highlight-color);
+.post-container .post-container__tile:hover {
+    font-size: var(--fs-500);
+    background-blend-mode: normal;
 }
+.highlight {
+    background-color: white;
+}
+
+
+
+
 /* All post tiles that occur after any checked input 
 will be hidden and replaced with filtered tiles*/
 input:checked ~ .post-container .post-container__tile {
@@ -402,8 +412,10 @@ input:checked ~ .post-container .post-container__tile {
     outline: none;
 }
 
+
 /*Filtered Post Tiles*/
 .post-container__tile--filtered {
+    transition: 0.3s;
     background-color: var(--blog-tile-bg-color);
     color: var(--blog-tile-font-color);
     cursor: pointer;
@@ -417,9 +429,11 @@ input:checked ~ .post-container .post-container__tile {
     margin-bottom: 5px;
     padding: 10px;
     text-decoration: none;
+    background-blend-mode:luminosity;
 }
-.post-container__tile--filtered:hover {
-    background-color: var(--highlight-color);
+.post-container .post-container__tile--filtered:hover {
+    font-size: var(--fs-500);
+    background-blend-mode: normal;
 }
 header a {
     text-decoration: none;
@@ -667,10 +681,10 @@ a.contact-link {
         display: inline-block;
         width: 90%;
     }
-    .post1 {
+    .post-container__tile:nth-child(1) {
         grid-column: 1;
     }
-    .post2 {
+    .post-container__tile:nth-child(2) {
         grid-column: 2;
     }
 
@@ -749,4 +763,46 @@ a.contact-link {
         display: block;
         padding: 10px;
     }
+}
+
+
+/* Blog Tile Backgrounds (to be appended each new post)
+/* Keep at bottom of page - makes it easier for python
+script to append */
+
+.post-container .tile-1 {
+    background-image: url("./blog-posts/blog-assets/web-dev-bootcamp.webp");
+    background-size:cover;
+}
+.post-container .tile-2 {
+    background-image: url("./blog-posts/blog-assets/joureny.webp");
+    background-size: cover;
+}
+.post-container .tile-3 {
+    background-image: url("./blog-posts/blog-assets/CSS-Zen-Garden.webp");
+    background-size: cover;
+}
+.post-container .tile-4 {
+    background-image: url("./blog-posts/blog-assets/blend.webp");
+    background-size: cover;
+}
+.post-container .tile-5 {
+    background-image: url("./blog-posts/blog-assets/flash-cards.webp");
+    background-size: cover;
+}
+.post-container .tile-6 {
+    background-image: url("./blog-posts/blog-assets/chekcbox-hack.webp");
+    background-size: cover;
+}
+.post-container .tile-7 {
+    background-image: url("./blog-posts/blog-assets/accordian.webp");
+    background-size: cover;
+}
+.post-container .tile-8 {
+    background-image: url("./blog-posts/blog-assets/filter.webp");
+    background-size: cover;
+}
+.post-container .tile-9 {
+    background-image: url("./blog-posts/blog-assets/portfolio.webp");
+    background-size: cover;
 }
