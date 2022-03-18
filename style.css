@@ -678,7 +678,6 @@ a.contact-link {
         grid-auto-columns: 50%;
     }
     .post-container__tile {
-        display: inline-block;
         width: 90%;
     }
     .post-container__tile:nth-child(1) {
