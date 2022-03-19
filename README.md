@@ -1,4 +1,4 @@
-<img src="./readme-images/hero.png" style="margin-bottom: 50px">
+<img src="./docs/readme-images/hero.png" style="margin-bottom: 50px">
 
 
 # <a id="top"></a> S.J. Smith Portfolio
@@ -59,7 +59,7 @@ The two main objectives I kept in mind while designing the functionality of my w
 ### Creating a responsive, mobile first website:
 
 This objective focused on designing the website from a **mobile user's perspective**, before making adjustments to suit tablet and desktop users. *Mobile first* isn't just about viewports and layouts, but also involves consideration of the overall site map and functionality of each component. One of the first major decisions I made in this particular area, was to try and fit my important content on a single, well-organised and scrollable page. I had already decided that my website would take a minimal approach to content, as I wanted the reader to quickly and easily understand my skills, interests and personality, without being overwhelmed with information.
-<img align="left" style="margin: 20px" width="300" height="auto" src="./readme-images/accordian_screenshot.png">
+<img align="left" style="margin: 20px" width="300" height="auto" src="./docs/readme-images/accordian_screenshot.png">
 
 My solution to fitting all of this content on the homepage was to build these accordian-like content boxes. To build them, I used the HTML `<details>` and  `<summary>` tags. These tags can be used in many ways, and are a great way to maximize page space. 
 
@@ -80,11 +80,11 @@ I wasn't sure what the documentation would say about putting `<h2>` tags inside 
 
 These collapsable content boxes allowed me to put the majority of my content on the homepage so the mobile user didn't have to keep scrolling back to a navbar to move around pages. Most of the information a recruiter would be looking for can be quickly expanded and collapsed without having to scroll at all.
 
- <img align="right" style="margin: 20px" width="200" height="auto" src="./readme-images/galaxy-fold_screenshot.png">
+ <img align="right" style="margin: 20px" width="200" height="auto" src="./docs/readme-images/galaxy-fold_screenshot.png">
 
 In terms of responsivity; thanks to the simple nature of my portfolio's design, I only needed to make some small adjustments for desktop and tablet. One was to give the main content wrapper a max-width, so it would stop expanding at a specific point. The other was to add some media queries for desktop and for the Samsung Galaxy Fold. The desktop media query, simply brought the main heading and theme-switch closer to the center of the screen *(testing on an ultrawide monitor revealed that it was quite awkard having the navbar spread out across the entire monitor.)* As for the Samsung Galaxy Fold, when it is in folded position the navbar turned into a bit of a mess, so I switched it to a flex column instead and adjusted the spacing. 
 
- <img align="right" style="margin: 20px" width="300" height="auto" src="./readme-images/swapped-highlight.png">
+ <img align="right" style="margin: 20px" width="300" height="auto" src="./docs/readme-images/swapped-highlight.png">
 
 
 ### Using accessible and inuitive design methods:
@@ -93,7 +93,7 @@ My biggest focus in this area was making sure to use semantic HTML, as well as m
 
 Mozilla Firefox's accessibility tools made it easy for me to see how my portfolio looked for people with different vision impairments, including Protanapia, Deuteranopia, Tritanopia and Achromatopsia; It also has a handy tool that displays your tab index order, which made it easy to check every page was tabbed correctly. I adjusted the contrast of my colors so that they would be suitable for people with low contrast, but also not too contrasted that it was difficult to read for people with no vision impairments. I also changed the areas which were highlighted when the theme was switched to dark mode, as bright yellow seems a lot brighter when the rest of the theme is dark.
 
- <img style="margin: 20px" width="500" height="auto" src="./readme-images/accessibility.png">
+ <img style="margin: 20px" width="500" height="auto" src="./docs/readme-images/accessibility.png">
 
 ---
 
