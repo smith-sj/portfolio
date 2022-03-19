@@ -95,7 +95,7 @@ My biggest focus in this area was making sure to use semantic HTML, as well as m
 
 Mozilla Firefox's accessibility tools made it easy for me to see how my portfolio looked for people with different vision impairments, including Protanapia, Deuteranopia, Tritanopia and Achromatopsia; It also has a handy tool that displays your tab index order, which made it easy to check every page was tabbed correctly. I adjusted the contrast of my colors so that they would be suitable for people with low contrast, but also not too contrasted that it was difficult to read for people with no vision impairments. I also changed the areas which were highlighted when the theme was switched to dark mode, as bright yellow seems a lot brighter when the rest of the theme is dark.
 
- <img style="margin: 20px" width="500" height="auto" src="./docs/component-images/accessibility.png">
+ <img style="margin: 20px" src="./docs/component-images/accessibility.png">
 
 ---
 
