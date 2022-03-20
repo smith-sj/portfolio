@@ -22,6 +22,7 @@
     /* assets */
     --expand-button: url("./assets/lightmodeexpand.svg");
     --collapse-button: url("./assets/lightmodecollapse.svg");
+    --download-button: url("./assets/download_light.svg");
     /* fonts */
     --ff-display: 'Montserrat', sans-serif;
     --ff-text: 'Ubuntu Mono', monospace;
@@ -58,6 +59,7 @@
     /* assets */
     --expand-button: url("./assets/darkmodeexpand.svg");
     --collapse-button: url("./assets/darkmodecollapse.svg");
+    --download-button: url("./assets/download_dark.svg");
 }
 
 /*--------------------------------*/
@@ -762,6 +764,16 @@ a.contact-link {
     .post-blockquote {
         float: left;
         width: 50%;
+    }
+
+
+    .download-resume {
+        display: block;
+        background: var(--download-button);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
     }
 
 }

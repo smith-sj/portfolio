@@ -3,7 +3,7 @@
 
 # <a id="top"></a> S.J. Smith Portfolio
 
-Website: https://smith-sj.github.io/portfolio/
+Website: https://sjsmith.dev
 
 Github: https://github.com/smith-sj/portfolio
 
@@ -45,7 +45,8 @@ The purpose of the project is to demonstrate my programming skills and experienc
 - CSS
 - JavaScript
 
-Deployed on Github Pages
+* Repository hosted by GitHub
+* Site deployed on Netlify
 
 ---
 
