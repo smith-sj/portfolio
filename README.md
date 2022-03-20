@@ -115,7 +115,7 @@ My biggest focus in this area was making sure to use semantic HTML; and that all
 Some of the semantic elements I used were:
 - `<header>`, `<main>`, `<footer>` for all page layouts
 - `<section>` for page sections
-- `<nav>` for navbars
+- `<nav>` for nav-bars
 - `<article>` for blog articles
 - `<p>` for paragraphs
 - `<figure>` and `<figcaption>` for post images
