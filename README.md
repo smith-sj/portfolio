@@ -110,7 +110,18 @@ as the result was a much more immersive desktop experience.
 
 [[back to top]](#top)
 
-My biggest focus in this area was making sure to use semantic HTML; and that all switches, filters and links were accessible via the tab, space and enter keys. I also tested my portfolio's colours across different visual impairments. I used the checkbox hack to build the theme-switch and blog category filters; I had to not just hide the checkbox with `hidden`, but rather shape them to their respective labels and make them transparent. This approach meant that although you can't see them, tabbing to the check-boxes creates an outline around the switch and filters, allowing them to be toggled or activated. I also added an aria-label to explain what the switch is for.
+My biggest focus in this area was making sure to use semantic HTML; and that all switches, filters and links were accessible via the tab, space and enter keys.
+
+Some of the semantic elements I used were:
+- `<header>`, `<main>`, `<footer>` for all page layouts
+- `<section>` for page sections
+- `<nav>` for navbars
+- `<article>` for blog articles
+- `<p>` for paragraphs
+- `<figure>` and `<figcaption>` for post images
+- `<ul>` and `<li>` for list items
+
+I also tested my portfolio's colours across different visual impairments. I used the checkbox hack to build the theme-switch and blog category filters; I had to not just hide the checkbox with `hidden`, but rather shape them to their respective labels and make them transparent. This approach meant that although you can't see them, tabbing to the check-boxes creates an outline around the switch and filters, allowing them to be toggled or activated. I also added an aria-label to explain what the switch is for.
 
 Mozilla Firefox's accessibility tools made it easy for me to see how my portfolio looked for people with different vision impairments. The tools included tests for Protanapia, Deuteranopia, Tritanopia and Achromatopsia. I adjusted the contrast of my colours so that they would be suitable for people with low contrast vision, but not too contrasted that it was difficult to read for people with no vision impairments. I also changed the highlight areas when the theme was switched to dark mode, as bright yellow seemed a lot brighter when the rest of the theme was dark.
 
