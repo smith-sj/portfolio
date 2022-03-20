@@ -26,7 +26,7 @@ Github: https://github.com/smith-sj/portfolio
 
 [[back to top]](#top)
 
-The purpose of the project is to demonstrate my programming skills and experience to recruiters and potential employers. It is also an opportunity to show my personality and provide some insight into my creative process and personal aesthetic. Finally, it is an archive of articles for anyone who may be interested in web dev discussion, tutorials, and general news.
+The purpose of the project is to demonstrate my programming skills and experience to recruiters and potential employers. It is also an opportunity to show my personality and provide some insight into my creative process and personal aesthetic. Finally, it is an archive of original articles for anyone who may be interested in web dev discussion, tutorials, and general news.
 
 ---
 
@@ -55,7 +55,7 @@ The purpose of the project is to demonstrate my programming skills and experienc
 
 [[back to top]](#top)
 
-The three main objectives I kept in mind while designing the functionality of my website were:
+There were three main objectives I had in mind while designing the functionality of my portfolio. The website had to be:
 
 1. **Mobile First**
 1. **Responsive**
@@ -67,7 +67,7 @@ The three main objectives I kept in mind while designing the functionality of my
 
 [[back to top]](#top)
 
-This objective focused on designing the website from a **mobile user's perspective**, before making adjustments to suit tablet and desktop users. *Mobile first* isn't just about view-ports and layouts, but also involves consideration of the overall site map and functionality of each component. One of the first major decisions I made in this particular area, was to try and fit my important content on a single, well-organised and scroll-able page. I had already decided that my website would take a minimal approach to content, as I wanted the reader to quickly and easily understand my skills, interests and personality, without being overwhelmed with information.
+This objective focused on designing the website from a **mobile user's perspective**, before making adjustments to suit tablet and desktop users. *Mobile first* isn't just about view-ports and layouts, but also involves consideration of the overall site map and functionality of each component. One of the first major decisions I made in this particular area, was to try and fit my important content on a single, well-organised and scroll-able page. I had already decided that my website would take a minimalistic approach to content, as I wanted the reader to quickly and easily understand my skills, interests and personality, without being overwhelmed by information.
 <img align="left" style="margin: 20px" width="300" height="auto" src="./docs/component-images/accordian.png">
 
 My solution to fitting all of this content on the homepage was to build these accordion-like content boxes. To build them, I used the HTML `<details>` and `<summary>` tags. These tags can be used in many ways, and are a great way to maximise page space. 
@@ -85,7 +85,7 @@ Content for accordion
 
 I wasn't sure what the documentation would say about putting `<h2>` tags inside the `<summary>` element but, thankfully, **[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)** states that permitted content includes *"Phrasing content or one element of Heading content."*
 
-These collapsible content boxes allowed me to put the majority of my content on the homepage so the mobile user didn't have to keep scrolling back to a navbar to move around pages. Most of the information a recruiter would be looking for can be quickly expanded and collapsed without having to scroll at all.
+These collapsible content boxes allowed me to put the majority of my content on the homepage so that the mobile user didn't have to keep scrolling back to a navbar to move around pages. Most of the information a recruiter would be looking for can be quickly expanded and collapsed without having to scroll at all.
 
 <img align="right" style="margin: 20px" width="200" height="auto" src="./docs/component-images/galaxy-fold.png">
 
@@ -96,9 +96,9 @@ These collapsible content boxes allowed me to put the majority of my content on 
 
 Both desktop and Samsung Galaxy Fold (in folded position) needed media queries. The latter was fairly straight forward; as the Samsung's screen is so small when folded, the main nav became
 a bit of a mess. I simply changed the navbar to a column instead of
-row and did a little re-positioning.
+row and did some re-positioning.
 
-The desktop media query was a bigger task. My first approach was just throw a max-width on the column, and leave it in the centre, but initial feedback suggested that there was too much white space on the screen. After playing around with grid layout, I decided I would use it to turn the page into two main columns, with the expander boxes on
+The desktop media query was a larger task. My first approach was to just throw a max-width on the column, and leave it in the center, but initial feedback suggested that there was too much white space on the screen. After playing around with grid layout, I decided I would use it to turn the page into two main columns, with the accordions on
 the left and the rest of the content on the right. Grid layout was a lot easier than I thought it would be to implement and I'm glad I did,
 as the result was a much more immersive desktop experience.
 
@@ -110,11 +110,11 @@ as the result was a much more immersive desktop experience.
 
 [[back to top]](#top)
 
-My biggest focus in this area was making sure to use semantic HTML, as well as making sure that all switches, filters and links were accessible via the tab, space and enter key. I also tested my portfolio's colours across different visual impairments. As I used the checkbox hack to build the theme-switch and blog category filters, I had to make sure to not just hide the checkbox, but rather shape it to the labels and make them transparent instead of setting them to `hidden`. This meant that although you can't see them, tabbing to the check-boxes creates an outline around the switch and filters, and allows them to be toggles or activated. I also added an aria-label to explain what the switch is for.
+My biggest focus in this area was making sure to use semantic HTML; and that all switches, filters and links were accessible via the tab, space and enter keys. I also tested my portfolio's colours across different visual impairments. I used the checkbox hack to build the theme-switch and blog category filters; I had to not just hide the checkbox with `hidden`, but rather shape them to their respective labels and make them transparent. This approach meant that although you can't see them, tabbing to the check-boxes creates an outline around the switch and filters, allowing them to be toggled or activated. I also added an aria-label to explain what the switch is for.
 
-Mozilla Firefox's accessibility tools made it easy for me to see how my portfolio looked for people with different vision impairments, including Protanapia, Deuteranopia, Tritanopia and Achromatopsia; It also has a handy tool that displays your tab index order, which made it easy to check every page was tabbed correctly. I adjusted the contrast of my colours so that they would be suitable for people with low contrast, but also not too contrasted that it was difficult to read for people with no vision impairments. I also changed the areas which were highlighted when the theme was switched to dark mode, as bright yellow seems a lot brighter when the rest of the theme is dark.
+Mozilla Firefox's accessibility tools made it easy for me to see how my portfolio looked for people with different vision impairments. The tools included tests for Protanapia, Deuteranopia, Tritanopia and Achromatopsia. I adjusted the contrast of my colours so that they would be suitable for people with low contrast vision, but not too contrasted that it was difficult to read for people with no vision impairments. I also changed the highlight areas when the theme was switched to dark mode, as bright yellow seemed a lot brighter when the rest of the theme was dark.
 
-Due to the simplicity of my site, there wasn't much I had to fix up to get a Lighthouse Accessibility score of 100%. All I had to do was add an aria-label to the resume download link and alt text to all of the images on the site.
+Due to the simplicity of my site, there wasn't much I had to fix up to get a Lighthouse Accessibility score of 100%. All I had to do was add some aria-labels and alt text to all of the images on the site.
 
 <img style="margin: 20px" src="./docs/component-images/lighthouse.png">
 
@@ -125,9 +125,9 @@ Due to the simplicity of my site, there wasn't much I had to fix up to get a Lig
 ## <a id="sitemap"></a> Sitemap
 [[back to top]](#top)
 
-The sitemap for my portfolio is fairly straight forward; considering most of the content is contained on the homepage, the only other page required was a blog archive. A post navigator is included at the bottom of each blog post, in case the reader is enjoying my content and would like to keep reading; this makes for a smooth transition between blog posts, with no extra steps.
+The sitemap for my portfolio is fairly straight forward; considering most of the content is contained on the homepage, the only other page required was a blog archive. A post navigator was included at the bottom of each blog post in case the reader is enjoying my content, and would like to continue reading; this makes for a smooth transition between blog posts, with no extra steps.
 
-I also included a **Recent Posts** section on the homepage, which acts as another entry point into the blog post loop. The home page also has a link to my resume download and external links to my professional social media accounts.
+I also included a **Recent Posts** section on the homepage, which acts as another entry point into the blog post loop. The home page has a link to my resume download and external links to professional social media accounts.
 
 <img style="margin: 20px" height="auto" src="./docs/site-map.png">
 
