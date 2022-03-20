@@ -357,6 +357,15 @@ details summary::-webkit-details-marker {
     filter: drop-shadow(-2px 7px 2px var(--drop-shadow-color))
 }
 
+.download-resume {
+    display: block;
+    background: var(--download-button);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
 /*--------------------------------------------*/
 /* BLOG POSTS */
 .recent-posts {
@@ -764,16 +773,6 @@ a.contact-link {
     .post-blockquote {
         float: left;
         width: 50%;
-    }
-
-
-    .download-resume {
-        display: block;
-        background: var(--download-button);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50px;
-        width: 50px;
     }
 
 }
