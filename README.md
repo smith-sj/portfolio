@@ -13,6 +13,9 @@ Github: https://github.com/smith-sj/portfolio
 - [Target Audience](#target-audience)
 - [Tech Stack](#tech-stack)
 - [Functionality & Features](#functionality)
+    - [Mobile First](#mobile-first)
+    - [Responsive](#responsive)
+    - [Accessibilty](#accessibility)
 - [Sitemap](#sitemap)
 - [Screenshots](#screenshots)
     - [Mobile](#mobile)
@@ -54,19 +57,24 @@ The purpose of the project is to demonstrate my programming skills and experienc
 
 [[back to top]](#top)
 
-The two main objectives I kept in mind while designing the functionality of my website were:
+The three main objectives I kept in mind while designing the functionality of my website were:
 
-1. **Create a responsive, mobile first website**
-1. **Use accessible and inuitive design**
+1. **Mobile First**
+1. **Responsive**
+1. **Accessibile & Intuitive**
 
-### Creating a responsive, mobile first website:
+
+<a id="mobile-first"></a>
+
+### Creating a mobile first website:
+
+[[back to top]](#top)
 
 This objective focused on designing the website from a **mobile user's perspective**, before making adjustments to suit tablet and desktop users. *Mobile first* isn't just about viewports and layouts, but also involves consideration of the overall site map and functionality of each component. One of the first major decisions I made in this particular area, was to try and fit my important content on a single, well-organised and scrollable page. I had already decided that my website would take a minimal approach to content, as I wanted the reader to quickly and easily understand my skills, interests and personality, without being overwhelmed with information.
 <img align="left" style="margin: 20px" width="300" height="auto" src="./docs/component-images/accordian.png">
 
 My solution to fitting all of this content on the homepage was to build these accordian-like content boxes. To build them, I used the HTML `<details>` and  `<summary>` tags. These tags can be used in many ways, and are a great way to maximize page space. 
 
-To use them, simply enter a title or some summarised text in the `<summary></summary>` tags, and put whatever content you want below. Then just wrap the summary and content in the `<details></details>` tags.
 
 ```
 <details>
@@ -85,14 +93,28 @@ These collapsable content boxes allowed me to put the majority of my content on 
 
  <img align="right" style="margin: 20px" width="200" height="auto" src="./docs/component-images/galaxy-fold.png">
 
-In terms of responsivity; thanks to the simple nature of my portfolio's design, I only needed to make some small adjustments for desktop and tablet. One was to give the main content wrapper a max-width, so it would stop expanding at a specific point. The other was to add some media queries for desktop and for the Samsung Galaxy Fold. The desktop media query, simply brought the main heading and theme-switch closer to the center of the screen *(testing on an ultrawide monitor revealed that it was quite awkard having the navbar spread out across the entire monitor.)* As for the Samsung Galaxy Fold, when it is in folded position the navbar turned into a bit of a mess, so I switched it to a flex column instead and adjusted the spacing. 
+<a id="responsive"></a>
+### Creating a responsive website:
 
- <img align="right" style="margin: 20px" width="300" height="auto" src="./docs/component-images/swapped-highlight.png">
+ [[back to top]](#top)
 
+Both desktop and Samsung Galaxy Fold (in folded position) needed media queies. The latter was fairly straight forward; as the Samsung's screen is so small when folded, the main nav became
+a bit of a mess. I simply changed the navbar to a column instead of
+row and did a little re-positioning.
 
-### Using accessible and inuitive design methods:
+The desktop media query was a bigger task. My first approach was just throw a max-width on the column, and leave it in the center, but initial feedback suggested that there was too much white space on the screen. After playing around with grid layout, I decided I would use it to turn the page into two main columns, with the expander boxes on
+the left and the rest of the content on the right. Grid layout was a lot easier than I thought it would be to implement and I'm glad I did,
+as the result was a much more immersive desktop experience.
 
-My biggest focus in this area was making sure to use semantic HTML, as well as making sure that all switches, filters and links were accessible via the tab, space and enter key. I also tested my portfolio's colors across diferrent visual impairments. As I used the checkbox hack to build the theme-switch and blog category filters, I had to make sure to not just hide the checkbox, but rather shape it to the labels and make them transparent instead of setting them to `hidden`. This meant that although you can't see them, tabbing to the checkboxes creates an outline around the switch and filters, and allows them to be toggles or activated.
+<img style="margin: 20px" height="auto" src="./docs/screenshots/desktop-home-light.png">
+
+<a id="accessibility"></a>
+
+### Creating an accessible and intuitive website:
+
+ [[back to top]](#top)
+
+My biggest focus in this area was making sure to use semantic HTML, as well as making sure that all switches, filters and links were accessible via the tab, space and enter key. I also tested my portfolio's colors across diferrent visual impairments. As I used the checkbox hack to build the theme-switch and blog category filters, I had to make sure to not just hide the checkbox, but rather shape it to the labels and make them transparent instead of setting them to `hidden`. This meant that although you can't see them, tabbing to the checkboxes creates an outline around the switch and filters, and allows them to be toggles or activated. I also added an aria-label to explain what the switch is for.
 
 Mozilla Firefox's accessibility tools made it easy for me to see how my portfolio looked for people with different vision impairments, including Protanapia, Deuteranopia, Tritanopia and Achromatopsia; It also has a handy tool that displays your tab index order, which made it easy to check every page was tabbed correctly. I adjusted the contrast of my colors so that they would be suitable for people with low contrast, but also not too contrasted that it was difficult to read for people with no vision impairments. I also changed the areas which were highlighted when the theme was switched to dark mode, as bright yellow seems a lot brighter when the rest of the theme is dark.
 
