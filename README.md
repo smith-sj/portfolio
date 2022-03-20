@@ -6,6 +6,8 @@ Website: https://sjsmith.dev
 
 Github: https://github.com/smith-sj/portfolio
 
+Commit Log: https://github.com/smith-sj/portfolio/commits/main
+
 ## Table of Contents
 
 - [Purpose](#purpose)
