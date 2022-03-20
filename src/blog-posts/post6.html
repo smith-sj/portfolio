@@ -17,27 +17,27 @@
 </head>
 
 <body>
-   <!-- MAIN NAV -->
-   <nav class="main-navbar">
+  <!-- MAIN NAV -->
+  <nav class="main-navbar">
     <!-- HEADER -->
     <div class="internal-wrapper">
-    <h1>
-      <a href="../index.html" class="main-navbar__heading">
-        S.J. Smith
-      </a>
-    </h1>
-    <!-- LINKS -->
-    <div class="main-navbar__link-wrapper">
-    <a class="main-navbar__link" href="../index.html">Home</a>
-    <a class="main-navbar__link" href="../blog.html">Blog</a>
-    </div>  
-    <!-- THEME SWITCH -->
-    <label class="theme-toggle" for="checkbox"  aria-label="theme toggle">
-      <input type="checkbox" id="checkbox" tabindex="0">
-      <div class="theme-toggle__slider"></div>
-    </label>
-    <script src="../mode-switch.js"></script>
-  </div>
+      <h1>
+        <a href="../index.html" class="main-navbar__heading">
+          S.J. Smith
+        </a>
+      </h1>
+      <!-- LINKS -->
+      <div class="main-navbar__link-wrapper">
+        <a class="main-navbar__link" href="../index.html">Home</a>
+        <a class="main-navbar__link" href="../blog.html">Blog</a>
+      </div>
+      <!-- THEME SWITCH -->
+      <label class="theme-toggle" for="checkbox" aria-label="theme toggle">
+        <input type="checkbox" id="checkbox" tabindex="0">
+        <div class="theme-toggle__slider"></div>
+      </label>
+      <script src="../mode-switch.js"></script>
+    </div>
   </nav>
   <div class="page-container">
     <!-- MAIN -->
@@ -50,92 +50,99 @@
         <article class="post__content">
           <p>The following text is a copy from another blog post, the full post will be coming soon.</p>
           <p>
-            I decided to put my recently acquired CSS knowledge to the test by creating some functional flash 
-            cards using only CSS. As we were also learning about HTTP, it felt like a fitting theme for the project. 
-            The term “mobile first” was also thrown around a lot in class this week, so I set out to make this 
+            I decided to put my recently acquired CSS knowledge to the test by creating some functional flash
+            cards using only CSS. As we were also learning about HTTP, it felt like a fitting theme for the project.
+            The term “mobile first” was also thrown around a lot in class this week, so I set out to make this
             project functional on mobile first and then adjusted for desktop.
           </p>
           <h3 class="post-subheading">What are some cool things I learned?</h3>
           <p>
-            <ul>
-              <li>Flexbox layout</li>
-              <li>Building Mobile First</li>
-              <li>The power of the calc() CSS function</li>
-              <li>The <em>Checkbox Hack</em></li>
-            </ul>
+          <ul>
+            <li>Flexbox layout</li>
+            <li>Building Mobile First</li>
+            <li>The power of the calc() CSS function</li>
+            <li>The <em>Checkbox Hack</em></li>
+          </ul>
           </p>
 
           <h3 class="post-subheading">What were some challenges I faced?</h3>
           <p>
-            <ul>
-              <li>Making mobile first layouts and CSS animations that would translate well to desktop</li>
-              <li>Discovering the different ways each mobile browser treats the :hover pseudo-selector</li>
-            </ul>
+          <ul>
+            <li>Making mobile first layouts and CSS animations that would translate well to desktop</li>
+            <li>Discovering the different ways each mobile browser treats the :hover pseudo-selector</li>
+          </ul>
           </p>
           <figure class="post-figure">
-            <img class="post-figure__image" src="./blog-assets/chekcbox-hack.webp" alt="vector style image of a toggle switch">
+            <img class="post-figure__image" src="./blog-assets/chekcbox-hack.webp"
+              alt="vector style image of a toggle switch">
           </figure>
-          <h3 class="post-subheading">General Layout and Animation</h3> 
+          <h3 class="post-subheading">General Layout and Animation</h3>
           <p>
-            I have to admit, learning CSS animation was easier than I thought it would be, that said, this 
-            project uses some pretty basic ones. There are the initial fanout <b>keyframes</b> for each card, that 
-            activate when the page loads and are responsible for the cards moving to their initial positions 
-            and then there are the <b>transform</b> rules that are activated on hover (this was eventually changed 
-            to on-tap, but we’ll get to that later.) Turns out CSS keyframes are really quite simple, 
+            I have to admit, learning CSS animation was easier than I thought it would be, that said, this
+            project uses some pretty basic ones. There are the initial fanout <b>keyframes</b> for each card, that
+            activate when the page loads and are responsible for the cards moving to their initial positions
+            and then there are the <b>transform</b> rules that are activated on hover (this was eventually changed
+            to on-tap, but we’ll get to that later.) Turns out CSS keyframes are really quite simple,
             and they really just work.
           </p>
           <p>
-            I found the most challenging part to be translating the layout and animations from mobile to 
-            desktop. I ended up using dynamic sizing units for mobile and static sizing for desktop, it just 
-            ended up being easier but did feel like I was cheating a little. If I find some spare time during 
+            I found the most challenging part to be translating the layout and animations from mobile to
+            desktop. I ended up using dynamic sizing units for mobile and static sizing for desktop, it just
+            ended up being easier but did feel like I was cheating a little. If I find some spare time during
             this crazy bootcamp, I’d like to refactor the desktop layout to use dynamic sizing as well.
           </p>
           <h3 class="post-subheading">The Hover Dilemma and Discovery of CSS Hacks</h3>
           <p>
-            I now had a pretty cool deck of cards that fan out and then pop up when you hover over them. 
-            As I was using Chrome developer tools in mobile layout, the hover effect translated pretty smoothly. 
-            I just tapped (clicked) a card and it would pop up, and if I tapped another card it would pop up and 
-            the other would pop down. The only issue was that you couldn’t tap the card to go back down. I was 
-            okay with that. So I pushed it up to GitHub, deployed it to Pages, checked it on my Android phone 
-            with Chrome and bam! It worked beautifully. Then I grabbed my partner’s iPhone, opened it up in 
-            Safari and ”… oh.. No, what is this!?” Safari treats hover differently! And in this case, it was 
-            horrible. On Safari you have to hold the card for a second to activate the hover effect, but since 
-            the only place to press the card was text, it would select the text and you’d have this weird 
-            highlighted nothingness. The whole experience just felt off. I could probably have fixed the text 
-            selection problem. But the feeling of having to hold the cards was just bad in general. Since most 
+            I now had a pretty cool deck of cards that fan out and then pop up when you hover over them.
+            As I was using Chrome developer tools in mobile layout, the hover effect translated pretty smoothly.
+            I just tapped (clicked) a card and it would pop up, and if I tapped another card it would pop up and
+            the other would pop down. The only issue was that you couldn’t tap the card to go back down. I was
+            okay with that. So I pushed it up to GitHub, deployed it to Pages, checked it on my Android phone
+            with Chrome and bam! It worked beautifully. Then I grabbed my partner’s iPhone, opened it up in
+            Safari and ”… oh.. No, what is this!?” Safari treats hover differently! And in this case, it was
+            horrible. On Safari you have to hold the card for a second to activate the hover effect, but since
+            the only place to press the card was text, it would select the text and you’d have this weird
+            highlighted nothingness. The whole experience just felt off. I could probably have fixed the text
+            selection problem. But the feeling of having to hold the cards was just bad in general. Since most
             people will probably view this project with mobile Safari, this just wasn’t going to cut it.
           </p>
           <blockquote class="post-blockquote">
-            <p>Safari treats hover differently... you have to hold the card for a second to activate the 
-              hover effect, but since the only place to press the card was text, it would select the text 
+            <p>Safari treats hover differently... you have to hold the card for a second to activate the
+              hover effect, but since the only place to press the card was text, it would select the text
               and you’d have this weird highlighted nothingness.</p>
-        </blockquote>
+          </blockquote>
           <p>
-            Then my brother came to the rescue. Yes, my actual brother, Derick Yearnsmith, CSS veteran and all-round 
-            talented dude. He told me about these <em>CSS Hacks</em> - some sort of ancient art, known only by the bravest 
-            of coders... and also explained in detail at <a class="post__link" href="https://css-tricks.com/">CSS Tricks</a>. The 3 that Derick pointed me towards were 
-            the <em>:target</em> trick, <em>Checkbox Hack</em> and <em>Radio Button Hack</em>. I won’t go into how they all work because CSS 
-            Tricks does that better than I could, but I will say that I tried all of them and went with the 
-            Checkbox Hack in the end. The :target trick was a bit janky - it worked - but it caused the page to 
-            jump and although others have managed to implement it seamlessly, I couldn't get it to work nicely with 
-            this project. The Radio Button Hack was smoother, and it worked well, but it had the one drawback of not 
-            allowing you to tap a card back down, as is the case with radio buttons, the only way to deselect one 
+            Then my brother came to the rescue. Yes, my actual brother, Derick Yearnsmith, CSS veteran and all-round
+            talented dude. He told me about these <em>CSS Hacks</em> - some sort of ancient art, known only by the
+            bravest
+            of coders... and also explained in detail at <a class="post__link" href="https://css-tricks.com/">CSS
+              Tricks</a>. The 3 that Derick pointed me towards were
+            the <em>:target</em> trick, <em>Checkbox Hack</em> and <em>Radio Button Hack</em>. I won’t go into how they
+            all work because CSS
+            Tricks does that better than I could, but I will say that I tried all of them and went with the
+            Checkbox Hack in the end. The :target trick was a bit janky - it worked - but it caused the page to
+            jump and although others have managed to implement it seamlessly, I couldn't get it to work nicely with
+            this project. The Radio Button Hack was smoother, and it worked well, but it had the one drawback of not
+            allowing you to tap a card back down, as is the case with radio buttons, the only way to deselect one
             is to select another. So the Checkbox Hack won.
           </p>
           <p>
-            In a nutshell, the card’s main container is a <b>label</b> with the <b>for</b> attribute set to an input with type 
-            <b>checkbox</b>. The input should also include the hidden attribute, so that the checkbox is invisible. Over 
-            in CSS land, the <b>:checked</b> pseudo-class selector is combined with <b>+ #cardID</b> to select the appropriate label. 
-            The rule can then be whatever needs changing, in this case: the label’s transform. 
+            In a nutshell, the card’s main container is a <b>label</b> with the <b>for</b> attribute set to an input
+            with type
+            <b>checkbox</b>. The input should also include the hidden attribute, so that the checkbox is invisible. Over
+            in CSS land, the <b>:checked</b> pseudo-class selector is combined with <b>+ #cardID</b> to select the
+            appropriate label.
+            The rule can then be whatever needs changing, in this case: the label’s transform.
             The result is smooth and functional.
           </p>
           <h3 class="post-subheading">Conclusion</h3>
           <p>
-            I learned a lot from doing this little project, and as a bonus I got more comfortable branching and 
-            merging in git. I could use this as some sort of menu on a portfolio site or something in the future, 
+            I learned a lot from doing this little project, and as a bonus I got more comfortable branching and
+            merging in git. I could use this as some sort of menu on a portfolio site or something in the future,
             but for now, I'll let it be a fun experiment.
           </p>
-          <span>Check them out <a class="post__link" href="https://smith-sj.github.io/CSS-only-flash-cards/">here.</a></span>
+          <span>Check them out <a class="post__link"
+              href="https://smith-sj.github.io/CSS-only-flash-cards/">here.</a></span>
         </article>
       </section>
     </main>
@@ -143,19 +150,19 @@
     <footer>
       <nav class="post-nav">
         <a class="post-nav__link" href="./post7.html">
-            <span>
-                Next →
-            </span>
-            <span>
-                Stylish HTML "Accordian"
-            </span>
-            </a>
-        <a class="post-nav__link" href="./post5.html">
           <span>
-              ← Previous
+            Next →
           </span>
           <span>
-              Pure CSS Flash Cards
+            Stylish HTML "Accordian"
+          </span>
+        </a>
+        <a class="post-nav__link" href="./post5.html">
+          <span>
+            ← Previous
+          </span>
+          <span>
+            Pure CSS Flash Cards
           </span>
         </a>
         <a class="post-nav__link" href="../blog.html">
