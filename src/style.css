@@ -422,6 +422,7 @@ a.contact-link:hover {
 }
 
 /*--------------------------------------------*/
+
 /* BLOG POSTS */
 .recent-posts {
     margin-top: 80px;
@@ -640,6 +641,7 @@ footer {
     margin: 0 auto 0;
 }
 
+/* Adjustments for Desktop */
 
 @media only screen and (min-width: 900px) {
     .page-container {
@@ -793,6 +795,9 @@ footer {
     }
 
 }
+
+/* Adjustments for Galaxy Fold */
+
 
 @media only screen and (max-width: 320px) {
     .theme-toggle {
